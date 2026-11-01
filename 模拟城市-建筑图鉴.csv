@@ -1,0 +1,380 @@
+﻿序号,名称,分类,子类,是否UI资源,描述,详情,解锁条件,费用,增益,图标Key,图集,Prefab,图片Sprite,原始JSON
+0,风力发电厂,基础资源,电力,,利用风力带来的绿色能源。,无尽的能源!好吧，其实刚好足够支持照明而已。电力是您城市中最重要的服务之一。,,金币 1.5万,能力+6、繁荣度+1,IconElec,SpriteAtlas8,Electricity1,Electricity,"[{""cost"": ""2,201,1.5万,消耗"", ""Ability"": ""5,501,6,能力"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+1,火力发电厂,基础资源,电力,,没有什么比廉价高效的燃煤更能为您的模拟市民带来温暖的了。,,市长等级 5,金币 15万,能力+36、繁荣度+2,IconElec,SpriteAtlas8,Electricity2,Electricity2-1,"[{""player_level"": 5}, {""cost"": ""2,201,15万,消耗"", ""Ability"": ""5,501,36,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+2,太阳能发电厂,基础资源,电力,,来自太阳的洁净、绿色能源。,,人口 300、市长等级 20,金币 25万,能力+60、繁荣度+2,IconElec,SpriteAtlas8,Electricity3,Electricity3-1,"[{""population"": 300, ""player_level"": 20}, {""cost"": ""2,201,25万,消耗"", ""Ability"": ""5,501,60,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+3,石油发电厂,基础资源,电力,,如果建在您的后院那可不算一件好事，但是它能让电价更加实惠。,,人口 800、市长等级 22,金币 30万,能力+70、繁荣度+2,IconElec,SpriteAtlas8,Electricity4,Electricity4-1,"[{""population"": 800, ""player_level"": 22}, {""cost"": ""2,201,30万,消耗"", ""Ability"": ""5,501,70,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+4,融合发电厂,基础资源,电力,,清洁、绿色，这意味着......是属于未来的能源！,,人口 1000、市长等级 24,金币 120万,能力+165、繁荣度+3,IconElec,SpriteAtlas8,Electricity5,Electricity5-1,"[{""population"": 1000, ""player_level"": 24}, {""cost"": ""2,201,120万,消耗"", ""Ability"": ""5,501,165,能力"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+5,智能配电中心,基础资源,电力,,实时监控城市电网运行，智能调配电力，保障稳定供电。,,市长等级 30、市长等级 40,金币 1100万,能力+320、繁荣度+4,IconElec,SpriteAtlas45,Electricity6,Electricity6-1,"[{""player_level"": 30}, {""player_level"": 40}, {""cost"": ""2,201,1100万,消耗"", ""Ability"": ""5,501,320,能力"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+6,能源调度大厦,基础资源,电力,,统筹城市能源的生产与分配，提高能源系统运行效率。,,市长等级 30、市长等级 40,金币 1300万,能力+380、繁荣度+4,IconElec,SpriteAtlas45,Electricity7,Electricity7-1,"[{""player_level"": 30}, {""player_level"": 40}, {""cost"": ""2,201,1300万,消耗"", ""Ability"": ""5,501,380,能力"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+7,天穹联合电站,基础资源,电力,,托高山日照与强劲风力，将风光能源转化为城市的清洁电力。,,市长等级 65、市长等级 70,金币 8500万,能力+700、繁荣度+5,IconElec,SpriteAtlas55,OmegaELEC,OmegaELEC1,"[{""player_level"": 65}, {""player_level"": 70}, {""cost"": ""2,201,8500万,消耗"", ""Ability"": ""5,501,700,能力"", ""Prosperity"": ""6,603,5,繁荣度""}]"
+8,基本水塔,基础资源,水源,,能持续地给水龙头供水。,嘿市长，供水现在成问题了。修建水塔，确保大家都能用上清凉的净水吧!水塔必须通过道路和您的住宅楼相连。,,金币 1.5万,能力+6、繁荣度+1,IconWater,SpriteAtlas7,Water1,Water1-1,"[{""cost"": ""2,201,1.5万,消耗"", ""Ability"": ""5,502,6,能力"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+9,水泵站,基础资源,水源,,这个大型的生产设备可以解决任何干渴问题！,,市长等级 5,金币 8万,能力+20、繁荣度+2,IconWater,SpriteAtlas7,Water2,Water2-1,"[{""player_level"": 5}, {""cost"": ""2,201,8万,消耗"", ""Ability"": ""5,502,20,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+10,集中供水站,基础资源,水源,,集中储存并输送城市用水，为周边区域提供稳定可靠的供水服务。,,市长等级 20、人口 1000,金币 25万,能力+60、繁荣度+2,IconWater,SpriteAtlas7,Water3,Water3-1,"[{""player_level"": 20, ""population"": 1000}, {""cost"": ""2,201,25万,消耗"", ""Ability"": ""5,502,60,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+11,超高压供水厂,基础资源,水源,,通过高压输水设备将水源输送至远距离或高地势区域，扩大城市供水范围。,,市长等级 22,金币 70万,能力+100、繁荣度+3,IconWater,SpriteAtlas7,Water4,Water4-1,"[{""player_level"": 22}, {""cost"": ""2,201,70万,消耗"", ""Ability"": ""5,502,100,能力"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+12,智能水网中心,基础资源,水源,,实时监测城市供水管网，智能调节水量与水压，提升供水效率。,,市长等级 27,金币 140万,能力+200、繁荣度+3,IconWater,SpriteAtlas7,Water5,Water5-1,"[{""player_level"": 27}, {""cost"": ""2,201,140万,消耗"", ""Ability"": ""5,502,200,能力"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+13,水压调控中心,基础资源,水源,,精准调节城市供水压力，确保各区域用水稳定顺畅。,,市长等级 30、市长等级 40,金币 1200万,能力+340、繁荣度+4,IconWater,SpriteAtlas45,Water6,Water6-1,"[{""player_level"": 30}, {""player_level"": 40}, {""cost"": ""2,201,1200万,消耗"", ""Ability"": ""5,502,340,能力"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+14,综合水务调度中心,基础资源,水源,,统一管理城市供水、排水与水资源调度，保障水务系统高效运行。,,市长等级 30、市长等级 40,金币 1400万,能力+410、繁荣度+4,IconWater,SpriteAtlas45,Water7,Water7-1,"[{""player_level"": 30}, {""player_level"": 40}, {""cost"": ""2,201,1400万,消耗"", ""Ability"": ""5,502,410,能力"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+15,海水过滤厂,基础资源,水源,,过滤海水并去除盐分，为城市提供洁净淡水。,,市长等级 65、市长等级 70,金币 8500万,能力+700、繁荣度+5,IconWater,SpriteAtlas55,OmegaWater,OmegaWater1,"[{""player_level"": 65}, {""player_level"": 70}, {""cost"": ""2,201,8500万,消耗"", ""Ability"": ""5,502,700,能力"", ""Prosperity"": ""6,603,5,繁荣度""}]"
+16,污水排放管,基础资源,污水,,将管道系统中未经处理的污水排出倒掉。,面对现实吧，这么多模拟便便总得有地方可去。一根基础的污水排放管道可以搞定问题，修建豪华污水处理厂才是环境友好型选择。,市长等级 3、人口 240,金币 3万,能力+12、繁荣度+1,IconSewage,SpriteAtlas9,Sewage1,Sewage1-1,"[{""player_level"": 3, ""population"": 240}, {""cost"": ""2,201,3万,消耗"", ""Ability"": ""5,503,12,能力"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+17,污垢沉淀池,基础资源,污水,,嗯...没有什么东西比刚刚排出，未经处理的污水更臭了。,,市长等级 5,金币 15万,能力+38、繁荣度+2,IconSewage,SpriteAtlas9,Sewage2,Sewage2-1,"[{""player_level"": 5}, {""cost"": ""2,201,15万,消耗"", ""Ability"": ""5,503,38,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+18,污水净化厂,基础资源,污水,,虽然有些昂贵，但是您的市民会因为您没有让社区臭气熏天而感谢您。,,市长等级 20,金币 20万,能力+50、繁荣度+2,IconSewage,SpriteAtlas9,Sewage3,Sewage3-1,"[{""player_level"": 20}, {""cost"": ""2,201,20万,消耗"", ""Ability"": ""5,503,50,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+19,区域排污总站,基础资源,污水,,集中收集并输送区域污水，保障城市排污系统稳定高效运行。,,市长等级 25,金币 105万,能力+150、繁荣度+3,IconSewage,SpriteAtlas9,Sewage4,Sewage4-1,"[{""player_level"": 25}, {""cost"": ""2,201,105万,消耗"", ""Ability"": ""5,503,150,能力"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+20,净污循环系统,基础资源,污水,,对污水进行净化处理与循环利用，减少水资源浪费和环境污染。,,市长等级 28,金币 170万,能力+230、繁荣度+3,IconSewage,SpriteAtlas9,Sewage5,Sewage5-1,"[{""player_level"": 28}, {""cost"": ""2,201,170万,消耗"", ""Ability"": ""5,503,230,能力"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+21,再生水处理中心,基础资源,污水,,净化并循环利用城市废水，为城市提供稳定的再生水资源。,,市长等级 30、市长等级 40,金币 1150万,能力+320、繁荣度+4,IconSewage,SpriteAtlas45,Sewage6,Sewage6-1,"[{""player_level"": 30}, {""player_level"": 40}, {""cost"": ""2,201,1150万,消耗"", ""Ability"": ""5,503,320,能力"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+22,城市排水调度中心,基础资源,污水,,实时监控城市排水系统，及时应对积水与排水压力。,,市长等级 30、市长等级 40,金币 1500万,能力+450、繁荣度+4,IconSewage,SpriteAtlas45,Sewage7,Sewage7-1,"[{""player_level"": 30}, {""player_level"": 40}, {""cost"": ""2,201,1500万,消耗"", ""Ability"": ""5,503,450,能力"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+23,净水循环中心,基础资源,污水,,净化并回用城市污水，减少污染与水资源浪费。,,市长等级 65、市长等级 70,金币 7000万,能力+720、繁荣度+5,IconSewage,SpriteAtlas55,OmegaSewage,OmegaSewage1,"[{""player_level"": 65}, {""player_level"": 70}, {""cost"": ""2,201,7000万,消耗"", ""Ability"": ""5,503,720,能力"", ""Prosperity"": ""6,603,5,繁荣度""}]"
+24,小型垃圾场,基础资源,垃圾管理,,清理街道中的垃圾，一次一堆。,哇，那帮模拟市民弄出了好多垃圾!您可以暂时把垃圾丢进垃圾场，但随着城市越来越大，您应该修建焚化厂，或者绿色环保的回收中心。,市长等级 3、人口 240,金币 1.5万,能力+6、繁荣度+1,IconRubbish,SpriteAtlas10,Rubbish1,Rubbish1-1,"[{""player_level"": 3, ""population"": 240}, {""cost"": ""2,201,1.5万,消耗"", ""Ability"": ""5,504,6,能力"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+25,垃圾场,基础资源,垃圾管理,,模拟市民不喜欢把垃圾堆放在自家门口，所有都倒在这里吧！,,市长等级 5,金币 8万,能力+20、繁荣度+2,IconRubbish,SpriteAtlas10,Rubbish2,Rubbish2-1,"[{""player_level"": 5}, {""cost"": ""2,201,8万,消耗"", ""Ability"": ""5,504,20,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+26,垃圾焚化炉,基础资源,垃圾管理,,把垃圾焚烧掉！空气污染？算了吧，没人在乎那个。,,市长等级 14,金币 17万,能力+42、繁荣度+2,IconRubbish,SpriteAtlas10,Rubbish3,Rubbish3-1,"[{""player_level"": 14}, {""cost"": ""2,201,17万,消耗"", ""Ability"": ""5,504,42,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+27,垃圾环保处理厂,基础资源,垃圾管理,,废物利用能够让您的模拟市民自我感觉更好，这还不足够吗？,,市长等级 20,金币 26万,能力+65、繁荣度+2,IconRubbish,SpriteAtlas10,Rubbish4,Rubbish4-1,"[{""player_level"": 20}, {""cost"": ""2,201,26万,消耗"", ""Ability"": ""5,504,65,能力"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+28,生态降解中心,基础资源,垃圾管理,,以生态回收的方式将模拟市民的垃圾变废为宝。,,市长等级 30,金币 210万,能力+300、繁荣度+3,IconRubbish,SpriteAtlas10,Rubbish5,Rubbish5-1,"[{""player_level"": 30}, {""cost"": ""2,201,210万,消耗"", ""Ability"": ""5,504,300,能力"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+29,智慧分类中心,基础资源,垃圾管理,,运用智能技术分类处理城市垃圾，提高垃圾回收与处理效率。,,市长等级 30、市长等级 40,金币 1150万,能力+330、繁荣度+4,IconRubbish,SpriteAtlas45,Rubbish6,Rubbish6-1,"[{""player_level"": 30}, {""player_level"": 40}, {""cost"": ""2,201,1150万,消耗"", ""Ability"": ""5,504,330,能力"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+30,循环资源中心,基础资源,垃圾管理,,集中回收并再利用城市废弃资源，推动资源循环利用。,,市长等级 30、市长等级 40,金币 1600万,能力+500、繁荣度+4,IconRubbish,SpriteAtlas45,Rubbish7,Rubbish7-1,"[{""player_level"": 30}, {""player_level"": 40}, {""cost"": ""2,201,1600万,消耗"", ""Ability"": ""5,504,500,能力"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+31,资源再生厂,基础资源,垃圾管理,,集中处理城市垃圾，让可回收资源再次派上用场。,,市长等级 65、市长等级 70,金币 7500万,能力+700、繁荣度+5,IconRubbish,SpriteAtlas55,OmegaRubbish,OmegaRubbish1,"[{""player_level"": 65}, {""player_level"": 70}, {""cost"": ""2,201,7500万,消耗"", ""Ability"": ""5,504,700,能力"", ""Prosperity"": ""6,603,5,繁荣度""}]"
+32,微型消防站,区域服务,消防,,可以满足小片社区的灭火需求。,没有消防局，您城市里的建筑便可以被火烧光。保持模拟市民的快乐度，放置足够的消防局吧。,,金币 3万,幸福度+0.09%、繁荣度+1,IconFire,SpriteAtlas11,FireStation1,FireStation1-1,"[{""cost"": ""2,201,3万,消耗"", ""Satisfaction"": ""6,604,0.09%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+33,标准消防站,区域服务,消防,,普通的云梯消防车。修建消防站，确保模拟市民的安全。,,市长等级 5,金币 13万 + 绿钞 10,幸福度+0.11%、繁荣度+2,IconFire,SpriteAtlas11,FireStation2,FireStation2-1,"[{""player_level"": 5}, {""cost"": ""2,201,13万,消耗;2,202,10,"", ""Satisfaction"": ""6,604,0.11%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+34,特级消防站,区域服务,消防,,配备了专业的抢险救援车辆，专门应对普通站点无法处理的复杂险情。,,市长等级 8,金币 25万 + 绿钞 20,幸福度+0.11%、繁荣度+2,IconFire,SpriteAtlas11,FireStation3,FireStation3-1,"[{""player_level"": 8}, {""cost"": ""2,201,25万,消耗;2,202,20,"", ""Satisfaction"": ""6,604,0.11%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+35,豪华消防站,区域服务,消防,,这个消防站真是给力！不仅车辆更高级了，覆盖面积也更广了。,,市长等级 10,金币 200万 + 绿钞 50,幸福度+0.14%、繁荣度+3,IconFire,SpriteAtlas11,FireStation4,FireStation4-1,"[{""player_level"": 10}, {""cost"": ""2,201,200万,消耗;2,202,50,"", ""Satisfaction"": ""6,604,0.14%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+36,消防指挥中心,区域服务,消防,,面对摩天大楼的火灾，直升机将是您最得力的助手。,,市长等级 22,金币 250万 + 绿钞 70,幸福度+0.14%、繁荣度+3,IconFire,SpriteAtlas11,FireStation5,FireStation5-1,"[{""player_level"": 22}, {""cost"": ""2,201,250万,消耗;2,202,70,"", ""Satisfaction"": ""6,604,0.14%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+37,社区警务亭,区域服务,警察,,维持小片社区的治安。,让我们着手处理犯罪行为吧，市长......修建警察局，保护模拟市民，让他们更快乐。,,金币 3万,幸福度+0.09%、繁荣度+1,IconPolice,SpriteAtlas12,PoliceStation1,PoliceStation1-4,"[{""cost"": ""2,201,3万,消耗"", ""Satisfaction"": ""6,604,0.09%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+38,标准警察局,区域服务,警察,,让那些小混混远离街道...见一个，赶走一个！,,市长等级 5,金币 16万 + 绿钞 10,幸福度+0.11%、繁荣度+2,IconPolice,SpriteAtlas12,PoliceStation2,PoliceStation2-1,"[{""player_level"": 5}, {""cost"": ""2,201,16万,消耗;2,202,10,"", ""Satisfaction"": ""6,604,0.11%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+39,豪华警察局,区域服务,警察,,把它们都押到警局！这可不是开玩笑，您的模拟市民需要安全的环境来繁荣生息。,,市长等级 9,金币 22万 + 绿钞 20,幸福度+0.11%、繁荣度+2,IconPolice,SpriteAtlas12,PoliceStation3,PoliceStation3-1,"[{""player_level"": 9}, {""cost"": ""2,201,22万,消耗;2,202,20,"", ""Satisfaction"": ""6,604,0.11%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+40,市警察总局,区域服务,警察,,宏伟的执法心脏，统筹全市的警力部署。,,市长等级 12,金币 180万 + 绿钞 50,幸福度+0.14%、繁荣度+3,IconPolice,SpriteAtlas12,PoliceStation4,PoliceStation4-1,"[{""player_level"": 12}, {""cost"": ""2,201,180万,消耗;2,202,50,"", ""Satisfaction"": ""6,604,0.14%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+41,警察总署,区域服务,警察,,罪恶克星！这座城市需要一位英雄，而警察总署将是您最坚实的后盾。,,市长等级 22,金币 220万 + 绿钞 70,幸福度+0.14%、繁荣度+3,IconPolice,SpriteAtlas12,PoliceStation5,PoliceStation5-1,"[{""player_level"": 22}, {""cost"": ""2,201,220万,消耗;2,202,70,"", ""Satisfaction"": ""6,604,0.14%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+42,便民药房,区域服务,保健,,提供基础医疗，能够处理社区居民的轻微疾病，提升周边的健康指数。,模拟市民们身体健康，心情也就愉快。请不断修建诊所和医院，发展您的医疗保健系统。,,金币 3万,幸福度+0.09%、繁荣度+1,IconHealth,SpriteAtlas13,Hospital1,Hospital1-1,"[{""cost"": ""2,201,3万,消耗"", ""Satisfaction"": ""6,604,0.09%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+43,小型健康诊所,区域服务,保健,,一个小诊所，可以应付小片社区的健康问题。,,市长等级 5,金币 15万 + 绿钞 10,幸福度+0.11%、繁荣度+2,IconHealth,SpriteAtlas13,Hospital2,Hospital2-1,"[{""player_level"": 5}, {""cost"": ""2,201,15万,消耗;2,202,10,"", ""Satisfaction"": ""6,604,0.11%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+44,健康诊所,区域服务,保健,,这个小诊所会让您的模拟市民保持最佳健康状态。,,市长等级 11,金币 22万 + 绿钞 20,幸福度+0.11%、繁荣度+2,IconHealth,SpriteAtlas13,Hospital3,Hospital3-1,"[{""player_level"": 11}, {""cost"": ""2,201,22万,消耗;2,202,20,"", ""Satisfaction"": ""6,604,0.11%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+45,医院,区域服务,保健,,“有医生在吗？”这家大医院能为大量人口提供服务。,,市长等级 15,金币 220万 + 绿钞 50,幸福度+0.14%、繁荣度+3,IconHealth,SpriteAtlas13,Hospital4,Hospital4-1,"[{""player_level"": 15}, {""cost"": ""2,201,220万,消耗;2,202,50,"", ""Satisfaction"": ""6,604,0.14%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+46,中心医院,区域服务,保健,,顶尖的医疗研究和治疗中心，不仅能处理最疑难的杂症，还能派遣救护直升机，为您的城市提供最顶级的医疗保障。,,市长等级 20,金币 230万 + 绿钞 70,幸福度+0.14%、繁荣度+3,IconHealth,SpriteAtlas13,Hospital5,Hospital5-1,"[{""player_level"": 20}, {""cost"": ""2,201,230万,消耗;2,202,70,"", ""Satisfaction"": ""6,604,0.14%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+47,小型喷泉公园,区域服务,公园,,漂亮的瓷砖与多彩的花朵，装点了这座简单的喷泉。,模拟市民们想在繁忙的都市生活中休息片刻。公园可以提升周围家庭的快乐度，并且增加人口。,,金币 4万,幸福度+0.02%、繁荣度+1,IconPark,SpriteAtlas14,Park1,Park1-1,"[{""cost"": ""2,201,4万,消耗"", ""Satisfaction"": ""6,604,0.02%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+48,现代艺术公园,区域服务,公园,,模拟市民的后后现代艺术。,,市长等级 5,金币 5万 + 绿钞 10,幸福度+0.03%、繁荣度+1,IconPark,SpriteAtlas14,Park2,Park2-1,"[{""player_level"": 5}, {""cost"": ""2,201,5万,消耗;2,202,10,"", ""Satisfaction"": ""6,604,0.03%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+49,松影湖公园,区域服务,公园,,湖水与松林相映，是市民散步休憩的宁静去处。,,市长等级 5,金币 6万 + 绿钞 20,幸福度+0.03%、繁荣度+1,IconPark,SpriteAtlas49,Park11,Park11-1,"[{""player_level"": 5}, {""cost"": ""2,201,6万,消耗;2,202,20,"", ""Satisfaction"": ""6,604,0.03%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+50,水晶公园,区域服务,公园,,模拟市民都迷恋上了绿水晶？那是什么意思呢？,,市长等级 5,金币 6万 + 绿钞 20,幸福度+0.03%、繁荣度+1,IconPark,SpriteAtlas14,Park3,Park3-1,"[{""player_level"": 5}, {""cost"": ""2,201,6万,消耗;2,202,20,"", ""Satisfaction"": ""6,604,0.03%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+51,柳心湖公园,区域服务,公园,,垂柳轻拂湖面，湖心小亭点缀其间，景色清新雅致。,,市长等级 7,金币 28万 + 绿钞 50,幸福度+0.07%、繁荣度+2,IconPark,SpriteAtlas49,Park12,Park12-1,"[{""player_level"": 7}, {""cost"": ""2,201,28万,消耗;2,202,50,"", ""Satisfaction"": ""6,604,0.07%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+52,大学公园餐厅,区域服务,公园,,聪慧的模拟市民聚集在此享受学习之余的快乐时光,,市长等级 7,金币 28万 + 绿钞 50,幸福度+0.07%、繁荣度+2,IconPark,SpriteAtlas14,Park4,Park4-1,"[{""player_level"": 7}, {""cost"": ""2,201,28万,消耗;2,202,50,"", ""Satisfaction"": ""6,604,0.07%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+53,雕塑公园,区域服务,公园,,没有比看着裸体大理石雕像更能让人心神平静的了。,,市长等级 9,金币 32万 + 绿钞 60,幸福度+0.07%、繁荣度+2,IconPark,SpriteAtlas14,Park5,Park5-1,"[{""player_level"": 9}, {""cost"": ""2,201,32万,消耗;2,202,60,"", ""Satisfaction"": ""6,604,0.07%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+54,晴湾公园,区域服务,公园,,木屋静立湖畔，清澈水湾与岸边山石勾勒出悠闲的自然风光。,,市长等级 10,金币 34万 + 绿钞 50,幸福度+0.07%、繁荣度+2,IconPark,SpriteAtlas49,Park13,Park13-1,"[{""player_level"": 10}, {""cost"": ""2,201,34万,消耗;2,202,50,"", ""Satisfaction"": ""6,604,0.07%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+55,云水禅园,区域服务,公园,,古朴楼阁依水而建，石桥与庭院相映，流露出宁静雅致的东方韵味。,,市长等级 10,金币 34万 + 绿钞 50,幸福度+0.07%、繁荣度+2,IconPark,SpriteAtlas49,Park14,Park14-1,"[{""player_level"": 10}, {""cost"": ""2,201,34万,消耗;2,202,50,"", ""Satisfaction"": ""6,604,0.07%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+56,弧影静庭公园,区域服务,公园,,弧形步道环绕的小型绿地公园，安静宜停留。,,市长等级 10,金币 34万 + 绿钞 50,幸福度+0.07%、繁荣度+2,IconPark,SpriteAtlas15,Park6,Park6-1,"[{""player_level"": 10}, {""cost"": ""2,201,34万,消耗;2,202,50,"", ""Satisfaction"": ""6,604,0.07%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+57,林荫长廊,区域服务,公园,,树阵排列的公园，适合散步与通行。,,市长等级 12,金币 42万 + 绿钞 60,幸福度+0.07%、繁荣度+2,IconPark,SpriteAtlas15,Park7,Park7-1,"[{""player_level"": 12}, {""cost"": ""2,201,42万,消耗;2,202,60,"", ""Satisfaction"": ""6,604,0.07%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+58,欢乐水岸公园,区域服务,公园,,带滑梯与水域的亲水游乐空间，适合休闲玩乐。,,市长等级 15,金币 200万 + 绿钞 100,幸福度+0.1%、繁荣度+3,IconPark,SpriteAtlas15,Park8,Park8-1,"[{""player_level"": 15}, {""cost"": ""2,201,200万,消耗;2,202,100,"", ""Satisfaction"": ""6,604,0.1%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+59,花园喷泉广场,区域服务,公园,,对称绿植与喷泉景观结合的休闲花园广场。,,市长等级 18,金币 220万 + 绿钞 110,幸福度+0.1%、繁荣度+3,IconPark,SpriteAtlas15,Park9,Park9-1,"[{""player_level"": 18}, {""cost"": ""2,201,220万,消耗;2,202,110,"", ""Satisfaction"": ""6,604,0.1%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+60,樱梦水庭,区域服务,公园,,樱花环绕的梦幻水景公园。,,市长等级 20,金币 240万 + 绿钞 100,幸福度+0.1%、繁荣度+3,IconPark,SpriteAtlas15,Park10,Park10-1,"[{""player_level"": 20}, {""cost"": ""2,201,240万,消耗;2,202,100,"", ""Satisfaction"": ""6,604,0.1%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+61,童话城堡,区域服务,公园,,缤纷尖塔错落而立，仿佛藏着一个奇妙的童话世界。,,,,幸福度+0.12%、繁荣度+3,IconPark,SpriteAtlas49,"Park15, Foundation3-3",Park15,"[{""Satisfaction"": ""6,604,0.12%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+62,苏州园林,区域服务,公园,,白墙黛瓦，亭台映水，曲径回廊间感受江南园林的诗意与悠闲。,,,,幸福度+0.12%、繁荣度+3,IconPark,SpriteAtlas49,"SuZhouYuanLin, Foundation3-3",SuzhouYuanlin1,"[{""Satisfaction"": ""6,604,0.12%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+63,舒适小屋,区域服务,高山,,温馨安静的小屋，为旅人提供远离喧嚣的休憩空间。 远离海岸的另一边即现高山！,高山建筑只能放置在已解锁的:高山区域，坐落于远离沙滩的方向。建造高山建筑可以让人民更加幸福。,市长等级 35,,幸福度+0.1%、繁荣度+1,IconMountain,SpriteAtlas22,"Mountain1, Foundation2-1",Mountain1,"[{""player_level"": 35}, {""Satisfaction"": ""6,604,0.1%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+64,山坡小屋,区域服务,高山,,坐落于山间谷地的小木屋，拥有宁静而独特的自然风光。 远离海岸的另一边即现高山！,,市长等级 35,,幸福度+0.1%、繁荣度+1,IconMountain,SpriteAtlas22,"Mountain2, Foundation2-1",Mountain2,"[{""player_level"": 35}, {""Satisfaction"": ""6,604,0.1%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+65,信号塔,区域服务,高山,,矗立于高处的信号设施，为周边区域提供稳定的通信保障。 远离海岸的另一边即现高山！,,市长等级 35,,幸福度+0.15%、繁荣度+2,IconMountain,SpriteAtlas22,"Mountain3, Foundation2-2",Mountain3,"[{""player_level"": 35}, {""Satisfaction"": ""6,604,0.15%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+66,滑翔伞中心,区域服务,高山,,体验高空翱翔与山地风景的热门场所，深受冒险爱好者欢迎。 远离海岸的另一边即现高山！,,市长等级 35,,幸福度+0.15%、繁荣度+2,IconMountain,SpriteAtlas22,"Mountain4, Foundation2-2",Mountain4,"[{""player_level"": 35}, {""Satisfaction"": ""6,604,0.15%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+67,登山营地,区域服务,高山,,专为登山者打造的休整营地，是探索高山区域的重要据点。 远离海岸的另一边即现高山！,,市长等级 35,,幸福度+0.2%、繁荣度+3,IconMountain,SpriteAtlas22,"Mountain5, Foundation2-3",Mountain5,"[{""player_level"": 35}, {""Satisfaction"": ""6,604,0.2%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+68,瀑布城堡,区域服务,高山,,建立于山水之间的特色城堡景观，为城市增添神秘与浪漫气息。远离海岸的另一边即现高山！,,市长等级 35,,幸福度+0.2%、繁荣度+3,IconMountain,SpriteAtlas22,"Mountain6, Foundation2-2",Mountain6,"[{""player_level"": 35}, {""Satisfaction"": ""6,604,0.2%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+69,石脸瀑布,区域服务,高山,,飞流直下的壮丽瀑布景观，是最具自然魅力的观光胜地之一。 远离海岸的另一边即现高山！,,市长等级 35,,幸福度+0.3%、繁荣度+4,IconMountain,SpriteAtlas22,"Mountain7, Foundation2-2",Mountain7,"[{""player_level"": 35}, {""Satisfaction"": ""6,604,0.3%,满意度"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+70,吴哥窟,区域服务,地标,,护城河环绕的千年高棉石造圣殿，莲花石塔层叠耸立，满墙古老浮雕诉说远古文明，极具厚重史诗感。,宏伟的地标总能让城市更有故事感。模拟市民们会在这里驻足观赏、拍照留念，城市魅力也会随之提升。,,,幸福度+0.3%、繁荣度+6,IconLandMark,SpriteAtlas35,"AngkorWat, Foundation2-3",AngkorWat1,"[{""Satisfaction"": ""6,604,0.3%,满意度"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+71,歌特城堡,区域服务,地标,,尖塔林立、石墙厚重的中世纪哥特古堡，自带阴郁浪漫氛围，是充满复古神秘感的地标景观。,,,,幸福度+0.3%、繁荣度+6,IconLandMark,SpriteAtlas35,"GothicCastle, Foundation4-2",GothicCastle1,"[{""Satisfaction"": ""6,604,0.3%,满意度"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+72,大笨钟,区域服务,地标,,泰晤士河畔的钟塔，金色钟盘庄严醒目，是极具英伦古典气息的伦敦地标。,,,,幸福度+0.2%、繁荣度+6,IconLandMark,SpriteAtlas35,"BigBen, Foundation2-4",BigBen1,"[{""Satisfaction"": ""6,604,0.2%,满意度"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+73,摩天塔,区域服务,地标,,流线型塔身轻盈挺拔，为市民提供俯瞰城市风光的高空观景空间。,,,,人口增加+30%、繁荣度+6,IconLandMark,SpriteAtlas35,"GuangZhouTower, Foundation4-4",GuangZhouTower1,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+74,大雁塔,区域服务,地标,,层层叠起的古塔庄严挺拔，承载着悠久的历史文化，是城市中独具韵味的人文地标。,,,,幸福度+0.2%、繁荣度+6,IconLandMark,SpriteAtlas35,"DaYanTower, Foundation3-3",DaYanTower,"[{""Satisfaction"": ""6,604,0.2%,满意度"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+75,埃菲尔铁塔,区域服务,地标,,高耸的钢铁塔身优雅挺拔，为市民提供俯瞰城市景色的观景空间，也是浪漫与艺术的城市象征。,,,,人口增加+30%、繁荣度+6,IconLandMark,SpriteAtlas35,"EiffelTower, Foundation4-4",EiffelTower1,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+76,摩天塔,区域服务,地标,,流线型塔身轻盈挺拔，为市民提供俯瞰城市风光的高空观景空间。,,,,人口增加+20%、繁荣度+6,IconLandMark,SpriteAtlas35,"GuangZhouTower1, Foundation3-3",GuangZhouTower1,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+77,黄鹤楼,区域服务,地标,,飞檐层叠、气势恢宏，承载着深厚的历史文化与诗意情怀。,,,,人口增加+30%、繁荣度+6,IconLandMark,SpriteAtlas35,"HuangHeTower, Foundation4-4",HuangHeTower,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+78,比萨斜塔,区域服务,地标,,独特倾斜的塔身引人注目，是兼具历史韵味与建筑奇趣的城市地标。,,,,人口增加+20%、繁荣度+6,IconLandMark,SpriteAtlas51,"LeaningTower, Foundation3-3",LeaningTower1,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+79,凯旋门,区域服务,地标,,宏伟的拱门与精美浮雕相映，铭刻着城市的荣耀与辉煌。,,,,人口增加+30%、繁荣度+6,IconLandMark,SpriteAtlas51,"ArcdeTriomphe, Foundation4-3",ArcdeTriomphe1,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+80,祈福殿,区域服务,地标,,三重青瓦层层叠起，庄严殿宇坐落于洁白石台之上。人们在此许下心愿，祈愿风调雨顺、岁岁平安。,,,,人口增加+30%、繁荣度+6,IconLandMark,SpriteAtlas51,"TianTan, Foundation4-4",Tiantan,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
+81,白杨林,区域服务,景观,,成片挺拔的白杨随风摇曳，形成清新明亮的林间景观。 景观类建筑无需道路即可生效！,建设优美的自然景观，改善城市环境与居住体验，提升市民满意度。,,,幸福度+0.4%、繁荣度+1,IconLandscape,SpriteAtlas42,"Landscape1, Foundation1-1",PoplarTree1,"[{""Satisfaction"": ""6,604,0.4%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+82,松树林,区域服务,景观,,四季常青的松树层层相连，营造出安静自然的森林氛围。 景观类建筑无需道路即可生效！,,,,幸福度+0.4%、繁荣度+1,IconLandscape,SpriteAtlas42,"Landscape2, Foundation1-1",PineTree1,"[{""Satisfaction"": ""6,604,0.4%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+83,棕榈林,区域服务,景观,,高大的棕榈树错落分布，为城市增添轻松惬意的热带风情。 景观类建筑无需道路即可生效！,,,,幸福度+0.4%、繁荣度+1,IconLandscape,SpriteAtlas42,"Landscape3, Foundation1-1",PalmTree1,"[{""Satisfaction"": ""6,604,0.4%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+84,花田,区域服务,景观,,大片鲜花沿地面铺展开来，呈现出缤纷浪漫的自然景色。 景观类建筑无需道路即可生效！,,,,幸福度+0.8%、繁荣度+1,IconLandscape,SpriteAtlas42,"Landscape4, Foundation1-2",FlowerFields1,"[{""Satisfaction"": ""6,604,0.8%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+85,听风亭,区域服务,景观,,古朴雅致的中式凉亭，为市民提供休憩赏景的宁静空间。 景观类建筑无需道路即可生效！,,,,幸福度+0.4%、繁荣度+1,IconLandscape,SpriteAtlas46,"Landscape5, Foundation1-1",Landscape5-1,"[{""Satisfaction"": ""6,604,0.4%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+86,林间营地,区域服务,景观,,隐于绿荫间的休闲营地，让市民亲近自然，享受户外时光。 景观类建筑无需道路即可生效！,,,,幸福度+0.4%、繁荣度+1,IconLandscape,SpriteAtlas46,"Landscape6, Foundation1-1",Landscape6-1,"[{""Satisfaction"": ""6,604,0.4%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+87,缤纷喷泉,区域服务,景观,,清澈水流随节奏轻盈跃动，为城市增添活力与浪漫的休闲氛围。景观类建筑无需道路即可生效！,,,,幸福度+0.4%、繁荣度+1,IconLandscape,SpriteAtlas46,"Landscape7, Foundation1-1",Landscape7-1,"[{""Satisfaction"": ""6,604,0.4%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+88,静谧花园,区域服务,景观,,绿篱与水池相映成景，为市民提供散步休憩、放松身心的空间。景观类建筑无需道路即可生效！,,,,幸福度+0.8%、繁荣度+1,IconLandscape,SpriteAtlas47,"Landscape8, Foundation2-1",Landscape8-1,"[{""Satisfaction"": ""6,604,0.8%,满意度"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+89,碧水华亭,区域服务,景观,,精巧的楼阁临水而立，以桥连接两岸，为市民提供赏景之处。 景观类建筑无需道路即可生效！,,,,幸福度+1%、繁荣度+2,IconLandscape,SpriteAtlas47,"Landscape9, Foundation1-2",Landscape9-1,"[{""Satisfaction"": ""6,604,1%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+90,青瓦雅居,区域服务,景观,,青瓦木墙与庭院绿植相映成趣，营造出清幽古朴的景观。 景观类建筑无需道路即可生效！,,,,幸福度+1%、繁荣度+2,IconLandscape,SpriteAtlas47,"Landscape10, Foundation2-1",Landscape10-1,"[{""Satisfaction"": ""6,604,1%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+91,祥瑞牌坊,区域服务,景观,,飞檐牌坊与石狮相互映衬，寄托着城市吉祥兴盛的愿景。 景观类建筑无需道路即可生效！,,,,幸福度+1%、繁荣度+2,IconLandscape,SpriteAtlas47,"Landscape11, Foundation2-1",Landscape11-1,"[{""Satisfaction"": ""6,604,1%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+92,极地酒店,区域服务,景观,,以冰雪为主题打造的特色酒店，为游客提供清凉的住宿体验。 景观类建筑无需道路即可生效！,,,,幸福度+2%、繁荣度+2,IconLandscape,SpriteAtlas47,"Landscape12, Foundation3-3",ArcticHotel1,"[{""Satisfaction"": ""6,604,2%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+93,镇远城楼,区域服务,景观,,巍峨城楼守望着古老城门，厚重砖墙间沉淀着岁月的痕迹。 景观类建筑无需道路即可生效！,,,,幸福度+1.2%、繁荣度+2,IconLandscape,SpriteAtlas47,"Landscape13, Foundation2-2",ZhenYuanTower1,"[{""Satisfaction"": ""6,604,1.2%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+94,南瓜城堡,区域服务,景观,,当南瓜化作城堡，童话里的奇妙与古怪便有了落脚之处。 景观类建筑无需道路即可生效！,,,,幸福度+5%、繁荣度+3,IconLandscape,SpriteAtlas56,"Landscape14, Foundation4-2",PumpkinCastle,"[{""Satisfaction"": ""6,604,5%,满意度"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+95,南瓜灯,区域服务,景观,,俏皮的南瓜灯散发着暖暖微光，悄悄点亮城市的万圣节之夜。 景观类建筑无需道路即可生效！,,,,幸福度+1%、繁荣度+2,IconLandscape,SpriteAtlas56,"Landscape15, Foundation1-2",PumpkinLight1,"[{""Satisfaction"": ""6,604,1%,满意度"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+96,建材厂,城市发展,工业,,可以产出建材,城市的脉搏与大脑。高效的政府运作能让您的城市更加繁荣、稳定，并不断解锁新的发展里程碑。,市长等级 3,,繁荣度+1,IconInd,SpriteAtlas21,MaterialsFactory1,MaterialsFactory1-1,"[{""player_level"": 3}, {""Prosperity"": ""6,603,1,繁荣度""}]"
+97,建材厂,城市发展,工业,,可以产出建材,,市长等级 3,,,IconInd,SpriteAtlas21,MaterialsFactory2,MaterialsFactory2-1,"[{""player_level"": 3}]"
+98,建材厂,城市发展,工业,,可以产出建材,,市长等级 3,,,IconInd,SpriteAtlas21,MaterialsFactory3,MaterialsFactory3-1,"[{""player_level"": 3}]"
+99,建材厂,城市发展,工业,,可以产出建材,,市长等级 3,,,IconInd,SpriteAtlas21,MaterialsFactory4,MaterialsFactory4-1,"[{""player_level"": 3}]"
+100,建材厂,城市发展,工业,,可以产出建材,,市长等级 3,,,IconInd,SpriteAtlas21,MaterialsFactory5,MaterialsFactory5-1,"[{""player_level"": 3}]"
+101,建材厂,城市发展,工业,,可以产出建材,,市长等级 3,,,IconInd,SpriteAtlas21,MaterialsFactory6,MaterialsFactory6-1,"[{""player_level"": 3}]"
+102,五金厂,城市发展,工业,,可以产出五金器具,,任务步骤 100301,,繁荣度+1,IconInd,SpriteAtlas20,HardwareFactory1,HardwareFactory1-1,"[{""mission_step"": 100301}, {""Prosperity"": ""6,603,1,繁荣度""}]"
+103,五金厂,城市发展,工业,,可以产出五金器具,,市长等级 3,,,IconInd,SpriteAtlas20,HardwareFactory2,HardwareFactory2-1,"[{""player_level"": 3}]"
+104,五金厂,城市发展,工业,,可以产出五金器具,,市长等级 3,,,IconInd,SpriteAtlas20,HardwareFactory3,HardwareFactory3-1,"[{""player_level"": 3}]"
+105,五金厂,城市发展,工业,,可以产出五金器具,,市长等级 3,,,IconInd,SpriteAtlas20,HardwareFactory4,HardwareFactory4-1,"[{""player_level"": 3}]"
+106,五金厂,城市发展,工业,,可以产出五金器具,,市长等级 3,,,IconInd,SpriteAtlas20,HardwareFactory5,HardwareFactory5-1,"[{""player_level"": 3}]"
+107,五金厂,城市发展,工业,,可以产出五金器具,,市长等级 3,,,IconInd,SpriteAtlas20,HardwareFactory6,HardwareFactory6-1,"[{""player_level"": 3}]"
+108,家电厂,城市发展,工业,,可以生产各种家电,,市长等级 5,,繁荣度+1,IconInd,SpriteAtlas17,ApplianceFactory1,ApplianceFactory1-1,"[{""player_level"": 5}, {""Prosperity"": ""6,603,1,繁荣度""}]"
+109,家电厂,城市发展,工业,,可以生产各种家电,,市长等级 5,,,IconInd,SpriteAtlas17,ApplianceFactory2,ApplianceFactory2-1,"[{""player_level"": 5}]"
+110,家电厂,城市发展,工业,,可以生产各种家电,,市长等级 5,,,IconInd,SpriteAtlas17,ApplianceFactory3,ApplianceFactory3-1,"[{""player_level"": 5}]"
+111,家电厂,城市发展,工业,,可以生产各种家电,,市长等级 5,,,IconInd,SpriteAtlas17,ApplianceFactory4,ApplianceFactory4-1,"[{""player_level"": 5}]"
+112,家电厂,城市发展,工业,,可以生产各种家电,,市长等级 5,,,IconInd,SpriteAtlas17,ApplianceFactory5,ApplianceFactory5-1,"[{""player_level"": 5}]"
+113,家电厂,城市发展,工业,,可以生产各种家电,,市长等级 5,,,IconInd,SpriteAtlas17,ApplianceFactory6,ApplianceFactory6-1,"[{""player_level"": 5}]"
+114,家具厂,城市发展,工业,,可以制造各种家具,,市长等级 5,,繁荣度+1,IconInd,SpriteAtlas19,FurnitureFactory1,FurnitureFactory1-1,"[{""player_level"": 5}, {""Prosperity"": ""6,603,1,繁荣度""}]"
+115,家具厂,城市发展,工业,,可以制造各种家具,,市长等级 5,,,IconInd,SpriteAtlas19,FurnitureFactory2,FurnitureFactory2-1,"[{""player_level"": 5}]"
+116,家具厂,城市发展,工业,,可以制造各种家具,,市长等级 5,,,IconInd,SpriteAtlas19,FurnitureFactory3,FurnitureFactory3-1,"[{""player_level"": 5}]"
+117,家具厂,城市发展,工业,,可以制造各种家具,,市长等级 5,,,IconInd,SpriteAtlas19,FurnitureFactory4,FurnitureFactory4-1,"[{""player_level"": 5}]"
+118,家具厂,城市发展,工业,,可以制造各种家具,,市长等级 5,,,IconInd,SpriteAtlas19,FurnitureFactory5,FurnitureFactory5-1,"[{""player_level"": 5}]"
+119,家具厂,城市发展,工业,,可以制造各种家具,,市长等级 5,,,IconInd,SpriteAtlas19,FurnitureFactory6,FurnitureFactory6-1,"[{""player_level"": 5}]"
+120,食品厂,城市发展,工业,,可以制作各种食品,,市长等级 5,,繁荣度+1,IconInd,SpriteAtlas18,FoodFactory1,FoodFactory1-1,"[{""player_level"": 5}, {""Prosperity"": ""6,603,1,繁荣度""}]"
+121,食品厂,城市发展,工业,,可以制作各种食品,,市长等级 5,,,IconInd,SpriteAtlas18,FoodFactory2,FoodFactory2-1,"[{""player_level"": 5}]"
+122,食品厂,城市发展,工业,,可以制作各种食品,,市长等级 5,,,IconInd,SpriteAtlas18,FoodFactory3,FoodFactory3-1,"[{""player_level"": 5}]"
+123,食品厂,城市发展,工业,,可以制作各种食品,,市长等级 5,,,IconInd,SpriteAtlas18,FoodFactory4,FoodFactory4-1,"[{""player_level"": 5}]"
+124,食品厂,城市发展,工业,,可以制作各种食品,,市长等级 5,,,IconInd,SpriteAtlas18,FoodFactory5,FoodFactory5-1,"[{""player_level"": 5}]"
+125,食品厂,城市发展,工业,,可以制作各种食品,,市长等级 5,,,IconInd,SpriteAtlas18,FoodFactory6,FoodFactory6-1,"[{""player_level"": 5}]"
+126,设计院,城市发展,工业,,可以设计产出各种新颖建筑蓝图,,市长等级 15,金币 免费,繁荣度+2,IconInd,SpriteAtlas28,ArchitecturalDesign,ArchitecturalDesign1,"[{""player_level"": 15}, {""cost"": ""2,201,免费,消耗,"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+127,市政厅,城市发展,政府,,城市的财政中心。在这里，您可以随时查看城市信息，每日的税收收入都将汇总于此，是您建设城市的重要资金来源。,,市长等级 1,金币 免费,繁荣度+2,IconGov,SpriteAtlas16,CityGovernment,CityGovernment1,"[{""player_level"": 1}, {""cost"": ""2,201,免费,消耗,"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+128,住建局,城市发展,政府,,记录您建设伟业的荣誉殿堂。随着城市中各类建筑数量的增多，您将在这里解锁一项项建造相关的成就并领取奖励。,,任务步骤 100310,金币 免费,繁荣度+2,IconGov,SpriteAtlas16,BuildingDevelopment,BuildingDevelopment1,"[{""mission_step"": 100310}, {""cost"": ""2,201,免费,消耗,"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+129,市长之家,城市发展,政府,,见证城市从小镇到大都会的成长轨迹。每当城市人口数量达到新的高峰，别忘了来此领取属于您的市长奖励！,,任务步骤 100402,金币 免费,繁荣度+2,IconGov,SpriteAtlas16,PopulationDevelopment,PopulationDevelopment1,"[{""mission_step"": 100402}, {""cost"": ""2,201,免费,消耗,"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+130,发展局,城市发展,政府,,城市繁荣度的最佳见证。通过提升城市的吸引力和综合实力，您可以在这里点亮发展的里程碑，收获城市繁荣带来的回报。,,任务步骤 100404,金币 免费,繁荣度+2,IconGov,SpriteAtlas16,UrbanDevelopment,UrbanDevelopment1,"[{""mission_step"": 100404}, {""cost"": ""2,201,免费,消耗,"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+131,游艺中心,城市发展,政府,,汇集丰富多样的娱乐项目，以缤纷活力的空间为市民带来轻松欢乐的休闲体验。,,市长等级 30,金币 免费,繁荣度+2,IconGov,SpriteAtlas35,GameCentre,GameCentre1,"[{""player_level"": 30}, {""cost"": ""2,201,免费,消耗,"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+132,双车道建造UI,道路,,是,,加油规划道路吧！,,,,,SpriteAtlas,,RoadLevelOneShow,
+133,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne0,
+134,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne1,
+135,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne2,
+136,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne3,
+137,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne4,
+138,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne5,
+139,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne6,
+140,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne7,
+141,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne8,
+142,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne9,
+143,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne10,
+144,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne11,
+145,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne12,
+146,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne13,
+147,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne14,
+148,双车道,道路,1级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelOne15,
+149,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo0,
+150,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo1,
+151,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo2,
+152,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo3,
+153,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo4,
+154,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo5,
+155,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo6,
+156,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo7,
+157,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo8,
+158,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo9,
+159,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo10,
+160,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo11,
+161,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo12,
+162,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo13,
+163,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo14,
+164,四车道,道路,2级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelTwo15,
+165,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree0,
+166,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree1,
+167,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree2,
+168,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree3,
+169,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree4,
+170,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree5,
+171,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree6,
+172,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree7,
+173,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree8,
+174,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree9,
+175,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree10,
+176,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree11,
+177,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree12,
+178,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree13,
+179,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree14,
+180,六车道,道路,3级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelThree15,
+181,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour0,
+182,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour1,
+183,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour2,
+184,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour3,
+185,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour4,
+186,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour5,
+187,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour6,
+188,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour7,
+189,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour8,
+190,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour9,
+191,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour10,
+192,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour11,
+193,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour12,
+194,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour13,
+195,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour14,
+196,八车道,道路,4级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFour15,
+197,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive0,
+198,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive1,
+199,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive2,
+200,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive3,
+201,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive4,
+202,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive5,
+203,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive6,
+204,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive7,
+205,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive8,
+206,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive9,
+207,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive10,
+208,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive11,
+209,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive12,
+210,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive13,
+211,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive14,
+212,OMEGA磁悬浮公路,道路,5级道路,,,,,,,,SpriteAtlas,RoadBaseItem,RoadLevelFive15,
+213,通用公路拐角,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad3,
+214,通用公路直线,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad5,
+215,通用公路拐角,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad6,
+216,通用公路丁字口,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad7,
+217,通用公路拐角,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad9,
+218,通用公路直线,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad10,
+219,通用公路丁字口,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad11,
+220,通用公路拐角,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad12,
+221,通用公路丁字口,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad13,
+222,通用公路丁字口,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad14,
+223,通用公路十字口,道路,通用道路,,,,,,,,SpriteAtlas,RoadBaseItem,GeneralRoad15,
+224,立交桥,道路,立交桥,,,,,,,,,OverpassCoordinates,OverpassCoordinates1,
+225,湖泊建造UI,湖泊,,是,,建造湖泊可以提升满意度！,,,,,,,,
+226,湖泊,湖泊,湖泊,,,,市长等级 20,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne0,"[{""player_level"": 20}, {""cost"": ""1,180801,1,消耗,""}]"
+227,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne1,"[{""cost"": ""1,180801,1,消耗,""}]"
+228,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne2,"[{""cost"": ""1,180801,1,消耗,""}]"
+229,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne3,"[{""cost"": ""1,180801,1,消耗,""}]"
+230,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne4,"[{""cost"": ""1,180801,1,消耗,""}]"
+231,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne5,"[{""cost"": ""1,180801,1,消耗,""}]"
+232,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne6,"[{""cost"": ""1,180801,1,消耗,""}]"
+233,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne7,"[{""cost"": ""1,180801,1,消耗,""}]"
+234,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne8,"[{""cost"": ""1,180801,1,消耗,""}]"
+235,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne9,"[{""cost"": ""1,180801,1,消耗,""}]"
+236,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne10,"[{""cost"": ""1,180801,1,消耗,""}]"
+237,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne11,"[{""cost"": ""1,180801,1,消耗,""}]"
+238,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne12,"[{""cost"": ""1,180801,1,消耗,""}]"
+239,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne13,"[{""cost"": ""1,180801,1,消耗,""}]"
+240,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne14,"[{""cost"": ""1,180801,1,消耗,""}]"
+241,湖泊,湖泊,湖泊,,,,,金币 1,,,SpriteAtlas,CommonPlotBaseItem,LakeOne15,"[{""cost"": ""1,180801,1,消耗,""}]"
+242,一级现代住宅区,住宅,现代住宅区,,从紧凑的公寓到高耸入云的摩天大楼，定义着城市不断长高的天际线。,住宅区是城市发展的基础。随着住宅等级提升，可容纳更多居民入住，并为城市创造更高的人口规模和税收收益。,,,人口+30、繁荣度+1,,SpriteAtlas1,NormalResidential11,NormalResidential1-1-1,"[{""Population"": ""6,601,30,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+243,二级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas2,NormalResidential12,NormalResidential1-2-1,
+244,三级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas3,NormalResidential13,NormalResidential1-3-1,
+245,四级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas4,NormalResidential14,NormalResidential1-4-1,
+246,五级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas5,NormalResidential15,NormalResidential1-5-1,
+247,六级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas6,NormalResidential16,NormalResidential1-6-1,
+248,二级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas2,NormalResidential22,NormalResidential2-2-1,
+249,三级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas3,NormalResidential23,NormalResidential2-3-1,
+250,四级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas4,NormalResidential24,NormalResidential2-4-1,
+251,五级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas5,NormalResidential25,NormalResidential2-5-1,
+252,六级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas6,NormalResidential26,NormalResidential2-6-1,
+253,三级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas31,NormalResidential33,NormalResidential3-3-1,
+254,四级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas32,NormalResidential34,NormalResidential3-4-1,
+255,五级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas33,NormalResidential35,NormalResidential3-5-1,
+256,六级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas34,NormalResidential36,NormalResidential3-6-1,
+257,五级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas33,NormalResidential45,NormalResidential4-5-1,
+258,六级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas34,NormalResidential46,NormalResidential4-6-1,
+259,五级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas33,NormalResidential55,NormalResidential5-5-1,
+260,六级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas34,NormalResidential56,NormalResidential5-6-1,
+261,六级现代住宅区,住宅,现代住宅区,,,,,,,,SpriteAtlas34,NormalResidential66,NormalResidential6-6-1,
+262,一级新艺术住宅区,住宅,艺术住宅区,,繁复的铁艺雕花与石材浮雕，将居住空间装点得如画廊般精致典雅。,,,,人口+30、繁荣度+1,,SpriteAtlas1,ArtResidential11,ArtResidential1-1-1,"[{""Population"": ""6,601,30,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+263,二级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas2,ArtResidential12,ArtResidential1-2-1,
+264,三级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas3,ArtResidential13,ArtResidential1-3-1,
+265,四级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas4,ArtResidential14,ArtResidential1-4-1,
+266,五级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas5,ArtResidential15,ArtResidential1-5-1,
+267,六级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas6,ArtResidential16,ArtResidential1-6-1,
+268,二级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas2,ArtResidential22,ArtResidential2-2-1,
+269,三级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas3,ArtResidential23,ArtResidential2-3-1,
+270,四级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas4,ArtResidential24,ArtResidential2-4-1,
+271,五级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas5,ArtResidential25,ArtResidential2-5-1,
+272,六级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas6,ArtResidential26,ArtResidential2-6-1,
+273,三级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas24,ArtResidential33,ArtResidential3-3-1,
+274,四级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas25,ArtResidential34,ArtResidential3-4-1,
+275,五级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas26,ArtResidential35,ArtResidential3-5-1,
+276,六级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas27,ArtResidential36,ArtResidential3-6-1,
+277,三级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas24,ArtResidential43,ArtResidential4-3-1,
+278,四级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas25,ArtResidential44,ArtResidential4-4-1,
+279,五级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas26,ArtResidential45,ArtResidential4-5-1,
+280,六级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas27,ArtResidential46,ArtResidential4-6-1,
+281,五级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas26,ArtResidential55,ArtResidential5-5-1,
+282,六级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas27,ArtResidential56,ArtResidential5-6-1,
+283,六级新艺术住宅区,住宅,艺术住宅区,,,,,,,,SpriteAtlas27,ArtResidential66,ArtResidential6-6-1,
+284,一级怀旧住宅,住宅,怀旧住宅区,,在钢筋水泥的森林中，保留一份独有的宁静与厚重，这是老派绅士的避风港。,,,,人口+30、繁荣度+1,,SpriteAtlas1,NostalgicResidential11,NostalgicResidential1-1-1,"[{""Population"": ""6,601,30,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+285,二级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas2,NostalgicResidential12,NostalgicResidential1-2-1,
+286,三级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas3,NostalgicResidential13,NostalgicResidential1-3-1,
+287,四级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas4,NostalgicResidential14,NostalgicResidential1-4-1,
+288,五级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas5,NostalgicResidential15,NostalgicResidential1-5-1,
+289,六级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas6,NostalgicResidential16,NostalgicResidential1-6-1,
+290,二级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas2,NostalgicResidential22,NostalgicResidential2-2-1,
+291,三级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas3,NostalgicResidential23,NostalgicResidential2-3-1,
+292,四级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas4,NostalgicResidential24,NostalgicResidential2-4-1,
+293,五级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas5,NostalgicResidential25,NostalgicResidential2-5-1,
+294,六级怀旧住宅,住宅,怀旧住宅区,,,,,,,,SpriteAtlas6,NostalgicResidential26,NostalgicResidential2-6-1,
+295,一级田园木屋住宅,住宅,田园住宅区,,温馨自然的木制住宅，尽享宁静田园生活。,,,,人口+35、繁荣度+1,,SpriteAtlas29,TokyoResidential1,TokyoResidential1-1,"[{""Population"": ""6,601,35,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+296,二级田园木屋住宅,住宅,田园住宅区,,,,,,,,SpriteAtlas29,TokyoResidential2,TokyoResidential2-1,
+297,三级田园木屋住宅,住宅,田园住宅区,,,,,,,,SpriteAtlas29,TokyoResidential3,TokyoResidential3-1,
+298,四级田园木屋住宅,住宅,田园住宅区,,,,,,,,SpriteAtlas29,TokyoResidential4,TokyoResidential4-1,
+299,五级田园木屋住宅,住宅,田园住宅区,,,,,,,,SpriteAtlas29,TokyoResidential5,TokyoResidential5-1,
+300,六级田园木屋住宅,住宅,田园住宅区,,,,,,,,SpriteAtlas29,TokyoResidential6,TokyoResidential6-1,
+301,一级巴黎住宅,住宅,巴黎住宅区,,浪漫与艺术点缀街巷，在优雅的城市氛围中享受惬意生活。,,,,人口+40、繁荣度+1,,SpriteAtlas30,ParisResidential1,ParisResidential1-1,"[{""Population"": ""6,601,40,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+302,二级巴黎住宅,住宅,巴黎住宅区,,,,,,,,SpriteAtlas30,ParisResidential2,ParisResidential2-1,
+303,三级巴黎住宅,住宅,巴黎住宅区,,,,,,,,SpriteAtlas30,ParisResidential3,ParisResidential3-1,
+304,四级巴黎住宅,住宅,巴黎住宅区,,,,,,,,SpriteAtlas30,ParisResidential4,ParisResidential4-1,
+305,五级巴黎住宅,住宅,巴黎住宅区,,,,,,,,SpriteAtlas30,ParisResidential5,ParisResidential5-1,
+306,六级巴黎住宅,住宅,巴黎住宅区,,,,,,,,SpriteAtlas30,ParisResidential6,ParisResidential6-1,
+307,一级休闲度假住宅,住宅,度假住宅区,,远离城市喧嚣，享受轻松惬意的度假时光。,,,,人口+35、繁荣度+1,,SpriteAtlas39,VacationResidential1,VacationResidential1-1,"[{""Population"": ""6,601,35,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+308,二级休闲度假住宅,住宅,度假住宅区,,,,,,,,SpriteAtlas39,VacationResidential2,VacationResidential2-1,
+309,三级休闲度假住宅,住宅,度假住宅区,,,,,,,,SpriteAtlas39,VacationResidential3,VacationResidential3-1,
+310,四级休闲度假住宅,住宅,度假住宅区,,,,,,,,SpriteAtlas39,VacationResidential4,VacationResidential4-1,
+311,五级休闲度假住宅,住宅,度假住宅区,,,,,,,,SpriteAtlas39,VacationResidential5,VacationResidential5-1,
+312,六级休闲度假住宅,住宅,度假住宅区,,,,,,,,SpriteAtlas39,VacationResidential6,VacationResidential6-1,
+313,一级伦敦住宅,住宅,伦敦住宅区,,经典英伦风住宅，优雅红砖与精致庭院尽显伦敦魅力。,,,,人口+40、繁荣度+1,,SpriteAtlas37,LondonResidential1,LondonResidential1-1,"[{""Population"": ""6,601,40,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+314,二级伦敦住宅,住宅,伦敦住宅区,,,,,,,,SpriteAtlas37,LondonResidential2,LondonResidential2-1,
+315,三级伦敦住宅,住宅,伦敦住宅区,,,,,,,,SpriteAtlas37,LondonResidential3,LondonResidential3-1,
+316,四级伦敦住宅,住宅,伦敦住宅区,,,,,,,,SpriteAtlas37,LondonResidential4,LondonResidential4-1,
+317,五级伦敦住宅,住宅,伦敦住宅区,,,,,,,,SpriteAtlas37,LondonResidential5,LondonResidential5-1,
+318,六级伦敦住宅,住宅,伦敦住宅区,,,,,,,,SpriteAtlas37,LondonResidential6,LondonResidential6-1,
+319,青年旅馆,住宅,青年旅馆,,舒适便捷的旅馆住宅，为旅客提供温馨的临时居所。,,,,人口+40、繁荣度+1,,SpriteAtlas38,HotelResidential1,HotelResidential1-1,"[{""Population"": ""6,601,40,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+320,便捷酒店,住宅,旅馆住宅区,,,,,,,,SpriteAtlas38,HotelResidential2,HotelResidential2-1,
+321,轻奢酒店,住宅,旅馆住宅区,,,,,,,,SpriteAtlas38,HotelResidential3,HotelResidential3-1,
+322,一级意式风情住宅,住宅,意式住宅,,暖色建筑与精致窗台，营造出轻松惬意的意式生活氛围。,,,,人口+35、繁荣度+1,,SpriteAtlas44,ItalianStyleResidential1,ItalianStyleResidential1-1,"[{""Population"": ""6,601,35,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+323,二级意式风情住宅,住宅,意式住宅,,,,,,,,SpriteAtlas44,ItalianStyleResidential2,ItalianStyleResidential2-1,
+324,三级意式风情住宅,住宅,意式住宅,,,,,,,,SpriteAtlas44,ItalianStyleResidential3,ItalianStyleResidential3-1,
+325,四级意式风情住宅,住宅,意式住宅,,,,,,,,SpriteAtlas44,ItalianStyleResidential4,ItalianStyleResidential4-1,
+326,五级意式风情住宅,住宅,意式住宅,,,,,,,,SpriteAtlas44,ItalianStyleResidential5,ItalianStyleResidential5-1,
+327,六级意式风情住宅,住宅,意式住宅,,,,,,,,SpriteAtlas44,ItalianStyleResidential6,ItalianStyleResidential6-1,
+328,乡间民宿,住宅,乡间民宿,,朴素温馨的民宿住宅，为旅客提供安静舒适的放松之处。,,市长等级 30,,人口+40、繁荣度+1,,SpriteAtlas38,Guesthouse1,Guesthouse1-1,"[{""player_level"": 30}, {""Population"": ""6,601,40,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+329,雅致民宿,住宅,雅致民宿,,,,市长等级 30,,,,SpriteAtlas38,Guesthouse2,Guesthouse2-1,"[{""player_level"": 30}]"
+330,精品民宿,住宅,精品民宿,,,,市长等级 30,,,,SpriteAtlas38,Guesthouse3,Guesthouse3-1,"[{""player_level"": 30}]"
+331,摩登住宅,住宅,摩登住宅,,明快色彩与现代建筑线条交织，成为街区中亮眼的潮流地标。,,,,人口+1300、繁荣度+3,,SpriteAtlas50,ModernResidential12,ModernResidential1-2-1,"[{""Population"": ""6,601,1300,人口"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+332,摩登住宅,住宅,摩登住宅,,,,,,,,SpriteAtlas50,ModernResidential23,ModernResidential2-3-1,
+333,高级摩登住宅,住宅,高级摩登住宅,,流线型露台与绚丽灯牌交织，展现充满活力的都市生活气息。,,,,人口+1450、繁荣度+4,,SpriteAtlas50,ModernResidential11,ModernResidential1-1-1,"[{""Population"": ""6,601,1450,人口"", ""Prosperity"": ""6,603,4,繁荣度""}]"
+334,高级摩登住宅,住宅,高级摩登住宅,,,,,,,,SpriteAtlas50,ModernResidential22,ModernResidential2-2-1,
+335,高级摩登住宅,住宅,高级摩登住宅,,,,,,,,SpriteAtlas50,ModernResidential13,ModernResidential1-3-1,
+336,Omega住宅I型,住宅,Omega住宅I型,,未来科技融入日常起居，在繁忙都市中构筑温暖舒适的理想居所。,,市长等级 45,,人口+50、繁荣度+1,,SpriteAtlas52,OmegaResidential1,OmegaResidential1-1,"[{""player_level"": 45}, {""Population"": ""6,601,50,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+337,Omega住宅I型,住宅,Omega住宅I型,,,,市长等级 45,,,,SpriteAtlas52,OmegaResidential2,OmegaResidential2-1,"[{""player_level"": 45}]"
+338,Omega住宅I型,住宅,Omega住宅I型,,,,市长等级 45,,,,SpriteAtlas52,OmegaResidential3,OmegaResidential3-1,"[{""player_level"": 45}]"
+339,Omega住宅I型,住宅,Omega住宅I型,,,,市长等级 45,,,,SpriteAtlas52,OmegaResidential4,OmegaResidential4-1,"[{""player_level"": 45}]"
+340,Omega住宅I型,住宅,Omega住宅I型,,,,市长等级 45,,,,SpriteAtlas52,OmegaResidential5,OmegaResidential5-1,"[{""player_level"": 45}]"
+341,Omega住宅I型,住宅,Omega住宅I型,,,,市长等级 45,,,,SpriteAtlas52,OmegaResidential6,OmegaResidential6-1,"[{""player_level"": 45}]"
+342,Omega住宅II型,住宅,Omega住宅II型,,智慧生活与悠然居住相融合，为都市居民营造从容雅致的生活空间。,,市长等级 45,,人口+1800、繁荣度+3,,SpriteAtlas53,OmegaResidential7,OmegaResidential7-1,"[{""player_level"": 45}, {""Population"": ""6,601,1800,人口"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+343,Omega住宅II型,住宅,Omega住宅II型,,,,市长等级 45,,,,SpriteAtlas53,OmegaResidential8,OmegaResidential8-1,"[{""player_level"": 45}]"
+344,Omega住宅III型,住宅,Omega住宅III型,,前沿科技与理想人居相汇，承载面向未来的都市生活愿景。,,市长等级 45,,人口+240、繁荣度+1,,SpriteAtlas54,OmegaResidential9,OmegaResidential9-1,"[{""player_level"": 45}, {""Population"": ""6,601,240,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+345,Omega住宅III型,住宅,Omega住宅III型,,,,市长等级 45,,,,SpriteAtlas54,OmegaResidential10,OmegaResidential10-1,"[{""player_level"": 45}]"
+346,Omega住宅III型,住宅,Omega住宅III型,,,,市长等级 45,,,,SpriteAtlas54,OmegaResidential11,OmegaResidential11-1,"[{""player_level"": 45}]"
+347,Omega住宅III型,住宅,Omega住宅III型,,,,市长等级 45,,,,SpriteAtlas54,OmegaResidential12,OmegaResidential12-1,"[{""player_level"": 45}]"
+348,基克拉迪住宅,住宅,基克拉迪住宅,,洁白墙面配上湛蓝屋顶，在阳光下尽显爱琴海的浪漫与悠闲。,,市长等级 45,,人口+240、繁荣度+1,,SpriteAtlas57,CycladesResidential1,CycladesResidential1-1,"[{""player_level"": 45}, {""Population"": ""6,601,240,人口"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+349,基克拉迪住宅,住宅,基克拉迪住宅,,,,市长等级 45,,,,SpriteAtlas57,CycladesResidential2,CycladesResidential2-1,"[{""player_level"": 45}]"
+350,基克拉迪住宅,住宅,基克拉迪住宅,,,,市长等级 45,,,,SpriteAtlas57,CycladesResidential3,CycladesResidential3-1,"[{""player_level"": 45}]"
+351,基克拉迪住宅,住宅,基克拉迪住宅,,,,市长等级 45,,,,SpriteAtlas57,CycladesResidential4,CycladesResidential4-1,"[{""player_level"": 45}]"
+352,航运港口,航运,港口,,海上运输的核心枢纽,完成航运港口的订单，获得特殊地回报,市长等级 4,,,,SpriteAtlas,PortBuilding,Port1-1-1,"[{""player_level"": 4}]"
+353,日光浴会场,人文服务,沙滩,,阳光、沙滩与海风交织而成的休闲胜地，吸引大量市民前来放松度假。,沙滩建筑只能放置在已解锁的:海滩区域，您可以用这些建筑来让海岸更加热闹，并且增加人口。,,,人口增加+25%、繁荣度+1,IconBeach,SpriteAtlas23,"BeachBuilding1, Foundation2-1",BeachBuilding1,"[{""PopulationAdd"": ""6,601,25%,人口增加"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+354,沙滩娱乐场,人文服务,沙滩,,充满欢笑与活力的海滨娱乐区，是游客最喜爱的热门景点之一。,,,,人口增加+20%、繁荣度+1,IconBeach,SpriteAtlas23,"BeachBuilding2, Foundation2-2",BeachBuilding2,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+355,沙滩排球场,人文服务,沙滩,,在柔软的沙滩上尽情挥洒汗水，体验热血刺激的沙滩排球对决。,,,,人口增加+20%、繁荣度+1,IconBeach,SpriteAtlas23,"BeachBuilding3, Foundation3-3",BeachBuilding3,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+356,沙滩剧场,人文服务,沙滩,,迎着海风欣赏精彩演出，在浪涛声中感受独特的海滨艺术氛围。,,,,人口增加+30%、繁荣度+2,IconBeach,SpriteAtlas23,"BeachBuilding4, Foundation3-3",BeachBuilding4,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+357,海钓场,人文服务,沙滩,,这里汇聚丰富海洋资源，是钓鱼爱好者不可错过的休闲胜地。,,,,人口增加+25%、繁荣度+2,IconBeach,SpriteAtlas23,"BeachBuilding5, Foundation4-3",BeachBuilding5,"[{""PopulationAdd"": ""6,601,25%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+358,沙滩城堡,人文服务,沙滩,,用细腻的沙粒堆砌梦想，打造属于自己的童话城堡。,,,,人口增加+25%、繁荣度+2,IconBeach,SpriteAtlas23,"BeachBuilding6, Foundation4-3",BeachBuilding6,"[{""PopulationAdd"": ""6,601,25%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+359,游艇乐园,人文服务,沙滩,,驾驶游艇驰骋碧海，感受自由航行带来的畅快体验。,,,,人口增加+30%、繁荣度+3,IconBeach,SpriteAtlas23,"BeachBuilding7, Foundation4-4",BeachBuilding7,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+360,蓝湾水乐园,人文服务,沙滩,,清澈泳池与滨水步道相映成趣，为市民提供戏水游泳、享受阳光的休闲空间。,,,,人口增加+20%、繁荣度+2,IconBeach,SpriteAtlas23,"BeachBuilding8, Foundation3-2",BeachBuilding8,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+361,晨曦灯塔,人文服务,沙滩,,静静矗立于海岛之上，以明亮灯光指引远航船只，也为海岸增添宁静而温暖的风景。,,,,人口增加+20%、繁荣度+2,IconBeach,SpriteAtlas23,"BeachBuilding9, Foundation3-2",BeachBuilding9,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+362,网球场,人文服务,运动,,设施完善的专业网球场，为市民提供挥拍竞技与休闲健身的好去处。,建设丰富多样的运动设施，提升城市活力与吸引力，为城市增加更多人口。,,,人口增加+12%、繁荣度+1,IconSport,SpriteAtlas40,"TennisCourt, Foundation3-3",TennisCourt1,"[{""PopulationAdd"": ""6,601,12%,人口增加"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+363,足球场,人文服务,运动,,绿茵场上欢呼不断，是举办足球比赛和市民日常运动的理想场所。,,,,人口增加+20%、繁荣度+2,IconSport,SpriteAtlas40,"SoccerField, Foundation5-4",SoccerField1,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+364,棒球场,人文服务,运动,,标准化的棒球运动场，为城市带来精彩比赛与热烈的观赛氛围。,,,,人口增加+22%、繁荣度+2,IconSport,SpriteAtlas40,"BaseballField, Foundation4-4",BaseballField1,"[{""PopulationAdd"": ""6,601,22%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+365,田径场,人文服务,运动,,宽阔的运动场地，可开展跑步、跳跃等多种项目，激发城市运动活力。,,,,人口增加+30%、繁荣度+3,IconSport,SpriteAtlas40,"AthleticsTrack, Foundation6-4",AthleticsTrack1,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+366,橄榄球场,人文服务,运动,,充满力量与激情的竞技场，让市民感受团队协作与激烈对抗的魅力。,,,,人口增加+30%、繁荣度+3,IconSport,SpriteAtlas40,"RugbyField, Foundation4-6",RugbyField1,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+367,城市体育场,人文服务,运动,,集运动健身与赛事活动于一体，点燃城市的运动热情。,,,,人口增加+20%、繁荣度+2,IconSport,SpriteAtlas40,"Gymnasium, Foundation5-4",Gymnasium1,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+368,露天剧场,人文服务,娱乐,,精彩的露天演出丰富市民生活，吸引更多游客与居民来到城市。,建设丰富多样的娱乐设施，提升城市魅力与居民幸福感，吸引更多人口前来定居。,,,人口增加+15%、繁荣度+1,IconEntertainment,SpriteAtlas41,"OpenAirTheater, Foundation2-2",OpenAirTheater1,"[{""PopulationAdd"": ""6,601,15%,人口增加"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+369,会展中心,人文服务,娱乐,,举办各类展览与大型活动，提升城市知名度并带来更多人口。,,,,人口增加+24%、繁荣度+2,IconEntertainment,SpriteAtlas41,"ConventionCenter, Foundation2-3",ConventionCenter1,"[{""PopulationAdd"": ""6,601,24%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+370,摩天轮,人文服务,娱乐,,浪漫醒目的城市地标，为市民带来欢乐并提升城市吸引力。,,,,人口增加+20%、繁荣度+2,IconEntertainment,SpriteAtlas41,"FerrisWheel, Foundation3-3",FerrisWheel,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+371,大剧院,人文服务,娱乐,,高品质的文化演出提升城市魅力，吸引更多市民前来定居。,,,,人口增加+25%、繁荣度+3,IconEntertainment,SpriteAtlas41,"GrandTheater, Foundation5-3",GrandTheater1,"[{""PopulationAdd"": ""6,601,25%,人口增加"", ""Prosperity"": ""6,603,3,繁荣度""}]"
+372,椰风水岸,人文服务,娱乐,,椰林、泳池与休闲小屋相映成趣，为市民提供戏水放松、享受热带风情的度假空间。,,,,人口增加+25%、繁荣度+2,IconEntertainment,SpriteAtlas48,"CoconutWaterfront, Foundation2-3",CoconutWaterfront1,"[{""PopulationAdd"": ""6,601,25%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+373,星光剧场,人文服务,娱乐,,绚丽的舞台与灯光为市民带来精彩演出，是欣赏表演、感受艺术魅力的欢乐场所。,,,,人口增加+18%、繁荣度+2,IconEntertainment,SpriteAtlas48,"StarlightTheater, Foundation3-3",StarlightTheater1,"[{""PopulationAdd"": ""6,601,18%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+374,小学,人文服务,教育,,完善的基础教育设施为孩子提供良好的学习环境，吸引更多家庭来到城市生活。,建设完善的教育设施，满足不同阶段的学习需求，吸引更多家庭与人才前来定居。,,,人口增加+15%、繁荣度+1,IconEdu,SpriteAtlas43,"Education1, Foundation3-2",ElementarySchool1,"[{""PopulationAdd"": ""6,601,15%,人口增加"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+375,市立高中,人文服务,教育,,学生们在这里学习和生活。校园设施齐全，环境安静整洁。,,,,人口增加+20%、繁荣度+2,IconEdu,SpriteAtlas43,"Education2, Foundation3-3",University1,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+376,博物馆,人文服务,教育,,收藏并展示城市的历史与文化，为市民提供了解城市发展的窗口。,,,,人口增加+16%、繁荣度+1,IconEdu,SpriteAtlas43,"Education5, Foundation3-2",Museum1,"[{""PopulationAdd"": ""6,601,16%,人口增加"", ""Prosperity"": ""6,603,1,繁荣度""}]"
+377,艺术馆,人文服务,教育,,展出丰富多样的艺术作品，为市民提供欣赏艺术与感受创意的空间。,,,,人口增加+18%、繁荣度+2,IconEdu,SpriteAtlas43,"Education3, Foundation3-3",ArtGallery1,"[{""PopulationAdd"": ""6,601,18%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
+378,图书馆,人文服务,教育,,丰富的藏书和安静的阅读环境，为市民提供学习知识与查阅资料的场所。,,,,人口增加+20%、繁荣度+2,IconEdu,SpriteAtlas43,"Education4, Foundation3-3",Library1,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,2,繁荣度""}]"
