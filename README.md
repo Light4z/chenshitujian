@@ -4,7 +4,9 @@
 
 ## 使用
 
-直接用浏览器打开 `模拟城市-建筑图鉴.html`。`assets` 文件夹包含全部建筑图片，必须与 HTML 文件放在同一目录。
+在线访问：<https://light4z.github.io/chenshitujian/>
+
+本地使用时直接用浏览器打开 `index.html`。`assets` 文件夹包含全部建筑图片，必须与 HTML 文件放在同一目录。
 
 ## 内容
 
