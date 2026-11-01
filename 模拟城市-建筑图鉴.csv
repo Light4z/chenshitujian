@@ -72,7 +72,6 @@
 70,吴哥窟,区域服务,地标,,护城河环绕的千年高棉石造圣殿，莲花石塔层叠耸立，满墙古老浮雕诉说远古文明，极具厚重史诗感。,宏伟的地标总能让城市更有故事感。模拟市民们会在这里驻足观赏、拍照留念，城市魅力也会随之提升。,,,幸福度+0.3%、繁荣度+6,IconLandMark,SpriteAtlas35,"AngkorWat, Foundation2-3",AngkorWat1,"[{""Satisfaction"": ""6,604,0.3%,满意度"", ""Prosperity"": ""6,603,6,繁荣度""}]"
 71,歌特城堡,区域服务,地标,,尖塔林立、石墙厚重的中世纪哥特古堡，自带阴郁浪漫氛围，是充满复古神秘感的地标景观。,,,,幸福度+0.3%、繁荣度+6,IconLandMark,SpriteAtlas35,"GothicCastle, Foundation4-2",GothicCastle1,"[{""Satisfaction"": ""6,604,0.3%,满意度"", ""Prosperity"": ""6,603,6,繁荣度""}]"
 72,大笨钟,区域服务,地标,,泰晤士河畔的钟塔，金色钟盘庄严醒目，是极具英伦古典气息的伦敦地标。,,,,幸福度+0.2%、繁荣度+6,IconLandMark,SpriteAtlas35,"BigBen, Foundation2-4",BigBen1,"[{""Satisfaction"": ""6,604,0.2%,满意度"", ""Prosperity"": ""6,603,6,繁荣度""}]"
-73,摩天塔,区域服务,地标,,流线型塔身轻盈挺拔，为市民提供俯瞰城市风光的高空观景空间。,,,,人口增加+30%、繁荣度+6,IconLandMark,SpriteAtlas35,"GuangZhouTower, Foundation4-4",GuangZhouTower1,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
 74,大雁塔,区域服务,地标,,层层叠起的古塔庄严挺拔，承载着悠久的历史文化，是城市中独具韵味的人文地标。,,,,幸福度+0.2%、繁荣度+6,IconLandMark,SpriteAtlas35,"DaYanTower, Foundation3-3",DaYanTower,"[{""Satisfaction"": ""6,604,0.2%,满意度"", ""Prosperity"": ""6,603,6,繁荣度""}]"
 75,埃菲尔铁塔,区域服务,地标,,高耸的钢铁塔身优雅挺拔，为市民提供俯瞰城市景色的观景空间，也是浪漫与艺术的城市象征。,,,,人口增加+30%、繁荣度+6,IconLandMark,SpriteAtlas35,"EiffelTower, Foundation4-4",EiffelTower1,"[{""PopulationAdd"": ""6,601,30%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
 76,摩天塔,区域服务,地标,,流线型塔身轻盈挺拔，为市民提供俯瞰城市风光的高空观景空间。,,,,人口增加+20%、繁荣度+6,IconLandMark,SpriteAtlas35,"GuangZhouTower1, Foundation3-3",GuangZhouTower1,"[{""PopulationAdd"": ""6,601,20%,人口增加"", ""Prosperity"": ""6,603,6,繁荣度""}]"
