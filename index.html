@@ -75,6 +75,7 @@ select:focus{border-color:#c7a15a}
 /* ---------- grid ---------- */
 .grid{max-width:1240px;margin:20px auto 12px;padding:0 28px;display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:14px}
 .card{content-visibility:auto;contain-intrinsic-size:auto 276px;position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;cursor:default;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease;outline:none}
+.card.has-ratios{contain-intrinsic-size:auto 330px}
 .card:hover,.card:focus-visible{transform:translateY(-3px);box-shadow:0 14px 30px rgba(15,23,42,.10);border-color:#d5dae0}
 .card:focus-visible{box-shadow:0 0 0 3px rgba(201,138,46,.22),0 14px 30px rgba(15,23,42,.10)}
 .thumb{height:150px;position:relative;padding:10px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 42%,#ffffff 0%,#f7f8fa 58%,#eef0f3 100%);overflow:hidden}
@@ -104,6 +105,14 @@ select:focus{border-color:#c7a15a}
 .buff b{font-weight:600;color:#1f2937}
 .cost{font-weight:600;color:var(--accent);white-space:nowrap}
 .cost.none{color:#b6bdc7;font-weight:400}
+.power-ratios{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;margin-top:2px;padding:7px 4px;border:1px solid rgba(201,138,46,.12);border-radius:8px;background:linear-gradient(180deg,#fcfaf6,#f9fafb);text-align:center}
+.power-ratio{display:flex;flex-direction:column;align-items:center;min-width:0;padding:0 6px}
+.power-ratio+.power-ratio{border-left:1px solid rgba(201,138,46,.18)}
+.power-ratio span{display:flex;align-items:center;justify-content:center;color:#818b99;font-size:9px;line-height:1.35;white-space:nowrap}
+.power-ratio b{order:-1;color:#9a630b;font-size:14px;font-weight:700;line-height:1.15;letter-spacing:.01em;font-variant-numeric:tabular-nums}
+.power-ratio span{margin-top:3px}
+.card.has-ratios .meta{flex-direction:column;align-items:stretch;gap:3px}
+.card.has-ratios .cost{align-self:flex-end}
 .empty{max-width:1240px;margin:60px auto;padding:0 28px;text-align:center;color:var(--muted)}
 .empty b{display:block;color:#374151;font-size:16px;margin-bottom:6px}
 
@@ -179,6 +188,8 @@ summary{cursor:pointer;font-size:12.5px;color:#374151;outline:none}
   .toolbar-inner{padding:10px 16px}
   .grid{padding:0 16px;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
   .thumb{height:130px}
+  .power-ratio{padding:0 4px}
+  .power-ratio span{font-size:8.75px}
   .notes{padding:0 16px}
   .result{margin-left:0;width:100%}
   .panel{margin:0;max-height:100vh;height:100vh;border-radius:0}
@@ -369,6 +380,20 @@ function mediaHTML(entry, big){
   const cls = imgs.length === 2 ? ' mosaic two' : ' mosaic';
   return `<div class="${cls}">${imgs.slice(0,4).map(x=>`<img src="${IMG[x.sprite]}" alt="" loading="lazy" decoding="async">`).join('')}</div>`;
 }
+function powerRatiosHTML(d){
+  if(d.cat !== '基础资源' || !d.cost) return '';
+  const powerBuff = d.buffs.find(b=>b[0]==='能力');
+  const costMatch = d.cost.match(/([\d.]+)\s*(万|亿)/);
+  const geo = AREA_DATA[d.id];
+  const power = powerBuff ? Number(String(powerBuff[1]).replace(/,/g,'')) : 0;
+  const costWan = costMatch ? Number(costMatch[1]) * (costMatch[2]==='亿' ? 10000 : 1) : 0;
+  const area = geo ? geo[0] * geo[1] : 0;
+  if(!power || !costWan || !area) return '';
+  return `<div class="power-ratios">
+    <div class="power-ratio"><span>产能/资金比</span><b>${(power/costWan).toFixed(3)}</b></div>
+    <div class="power-ratio"><span>产能/占地比</span><b>${(power/area).toFixed(3)}</b></div>
+  </div>`;
+}
 function cardHTML(entry){
   const d = entry.d, n = entry.items.length;
   const catColor = CAT_COLOR[d.cat] || '#64748b';
@@ -379,7 +404,8 @@ function cardHTML(entry){
   const geo = AREA_DATA[d.id];
   const geoArea = geo ? `<span class="tag geo">占地面积 <b>${geo[0]}×${geo[1]}</b></span>` : '';
   const geoCover = geo && geo.length > 2 ? `<span class="tag geo">覆盖区域 <b>${geo[2]}×${geo[3]}</b></span>` : '';
-  return `<article class="card">
+  const powerRatios = powerRatiosHTML(d);
+  return `<article class="card${powerRatios?' has-ratios':''}">
     <div class="thumb">
       ${n>1?`<span class="count">${n} 变体</span>`:''}
       ${d.ui?`<span class="ui-badge">UI</span>`:''}
@@ -393,6 +419,7 @@ function cardHTML(entry){
         ${lvl?`<span class="tag lv">${lvl}级</span>`:''}
         ${geoArea}${geoCover}
       </div>
+      ${powerRatios}
       ${(buffs||cost)?`<div class="meta"><div class="buffs">${buffs}</div>${cost}</div>`:''}
     </div>
   </article>`;
