@@ -168,6 +168,7 @@ body.rank-mode .atlas-only{display:none}
 .boost-table .rk-cell .tag.quality{white-space:nowrap;vertical-align:middle;line-height:1.5}
 .boost-table .rk-cell .tag.quality:before{display:none}
 .rank-note{margin:14px 0 0;font-size:10.5px;color:#98a1ae;line-height:1.7}
+.rank-note b{color:#8a5407;font-weight:600}
 .empty{max-width:1240px;margin:60px auto;padding:0 28px;text-align:center;color:var(--muted)}
 .empty b{display:block;color:#374151;font-size:16px;margin-bottom:6px}
 
@@ -331,7 +332,7 @@ summary{cursor:pointer;font-size:12.5px;color:#374151;outline:none}
   <div class="rank-grid" id="rank-grid"></div>
   <h3 class="rank-section" id="power-heading">基础资源产能效率</h3>
   <div class="rank-grid power-grid" id="power-grid"></div>
-  <p class="rank-note" id="power-note">加成建筑中，消防、警察、保健、公园按服务覆盖类处理，未计入排行；基础资源按分类与等级排列，表中资金单位为万。高山、沙滩建筑的占地只按宽度×1计算，长度不计入性价比；高山覆盖区域按单侧延伸范围显示。千万级性价比最佳按同类中造价不低于1000万且排除最贵一项后，以产能/资金比40%、产能/占地比60%加权综合选出。</p>
+  <p class="rank-note" id="power-note"><b>资金充足时优先选同类最贵的一档</b>：单位资金产能虽然偏低，但总产能和单位占地产能最高，更省地；预算有限时再参考资金比。<br>加成建筑中，消防、警察、保健、公园按服务覆盖类处理，未计入排行；基础资源按分类与等级排列，表中资金单位为万。高山、沙滩建筑的占地只按宽度×1计算，长度不计入性价比；高山覆盖区域按单侧延伸范围显示。千万级性价比最佳按同类中造价不低于1000万且排除最贵一项后，以产能/资金比40%、产能/占地比60%加权综合选出。</p>
   <h3 class="rank-section" id="quality-heading">抽卡品质</h3>
   <div class="rank-grid" id="quality-grid"></div>
   <p class="rank-note" id="quality-note">品质取自游戏建筑蓝图道具表，与繁荣度无关。蓝色为普通、紫色为稀有、金色为最高品质，仅盲盒、转盘等抽卡途径获得的建筑才有品质；未出现在此表中的建筑为常规建造建筑。</p>
