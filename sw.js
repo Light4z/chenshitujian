@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chenshitujian-v21';
+const CACHE_NAME = 'chenshitujian-v22';
 const HTML_TIMEOUT = 800;
 const PRECACHE = [
   './',
