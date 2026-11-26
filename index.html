@@ -171,6 +171,22 @@ body.rank-mode .atlas-only{display:none}
 .boost-table .rk-cell .tag.quality:before{display:none}
 .rank-note{margin:14px 0 0;font-size:10.5px;color:#98a1ae;line-height:1.7}
 .rank-note b{color:#8a5407;font-weight:600}
+.pop-grid{grid-template-columns:1fr}
+.pop-card{max-width:860px;margin:0 auto}
+.pop-table th:first-child,.pop-table td:first-child{width:52px;text-align:left;padding-left:0}
+.pop-table th:nth-child(2),.pop-table td:nth-child(2){width:auto;padding-left:4px}
+.pop-table th:nth-child(3),.pop-table td:nth-child(3){width:64px}
+.pop-table th:nth-child(4),.pop-table td:nth-child(4){width:210px}
+.pop-table .idx .rank-no{margin-top:0;font-size:11px;color:#9aa3af}
+.pop-table .val{color:#16724d}
+.pop-meter{display:inline-block;width:120px;height:5px;border-radius:3px;background:#eef4f0;margin-right:8px;vertical-align:1px;overflow:hidden}
+.pop-meter i{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,#8fd7b3,#2f9e6b)}
+@media (max-width:640px){
+  .pop-table th:nth-child(1),.pop-table td:nth-child(1){width:38px}
+  .pop-table th:nth-child(3),.pop-table td:nth-child(3){width:44px}
+  .pop-table th:nth-child(4),.pop-table td:nth-child(4){width:150px}
+  .pop-meter{width:54px;margin-right:6px}
+}
 .empty{max-width:1240px;margin:60px auto;padding:0 28px;text-align:center;color:var(--muted)}
 .empty b{display:block;color:#374151;font-size:16px;margin-bottom:6px}
 
@@ -326,7 +342,7 @@ summary{cursor:pointer;font-size:12.5px;color:#374151;outline:none}
 <section class="rank-view" id="rank-view" hidden>
   <div class="rank-head">
     <h2>排行榜</h2>
-    <p>加成建筑：性价比 = 覆盖格数 × 加成数值 ÷ 占地格数；景观只算自身满意度，即 加成 ÷ 占地；基础资源比较单位资金与单位占地带来的产能。</p>
+    <p>加成建筑：性价比 = 覆盖格数 × 加成数值 ÷ 占地格数；景观只算自身满意度，即 加成 ÷ 占地；基础资源比较单位资金与单位占地带来的产能；住宅人口按各系列满级统计。</p>
   </div>
   <div class="rank-tabs" id="rank-tabs"></div>
   <h3 class="rank-section" id="boost-heading">加成建筑</h3>
@@ -335,6 +351,9 @@ summary{cursor:pointer;font-size:12.5px;color:#374151;outline:none}
   <h3 class="rank-section" id="power-heading">基础资源产能效率</h3>
   <div class="rank-grid power-grid" id="power-grid"></div>
   <p class="rank-note" id="power-note"><b>资金充足时优先选同类最贵的一档</b>：单位资金产能虽然偏低，但总产能和单位占地产能最高，更省地；预算有限时再参考资金比。<br>加成建筑中，消防、警察、保健、公园按服务覆盖类处理，未计入排行；基础资源按分类与等级排列，表中资金单位为万。高山、沙滩建筑的占地只按宽度×1计算，长度不计入性价比；高山覆盖区域按单侧延伸范围显示。千万级性价比最佳按同类中造价不低于1000万且排除最贵一项后，以产能/资金比40%、产能/占地比60%加权综合选出。</p>
+  <h3 class="rank-section" id="pop-heading">住宅人口排行</h3>
+  <div class="rank-grid pop-grid" id="pop-grid"></div>
+  <p class="rank-note" id="pop-note">按各系列满级住宅人口降序排列；同系列只取满级一项，暂无人口数据的住宅不计入。民宿与旅馆各级人口一致，合并为一项。</p>
   <h3 class="rank-section" id="quality-heading">抽卡品质</h3>
   <div class="rank-grid" id="quality-grid"></div>
   <p class="rank-note" id="quality-note">品质取自游戏建筑蓝图道具表，与繁荣度无关。蓝色为普通、紫色为稀有、金色为最高品质，仅盲盒、转盘等抽卡途径获得的建筑才有品质；未出现在此表中的建筑为常规建造建筑。</p>
@@ -676,6 +695,7 @@ const RANK_TABS = [
   ['地标','满意度 · 地标'],
   ['景观','满意度 · 景观'],
   ['power','基础资源'],
+  ['pop','住宅人口'],
   ['quality','抽卡品质']
 ];
 const GRADE_META = {S:'顶级',A:'优秀',B:'良好',C:'一般'};
@@ -784,15 +804,72 @@ function renderQuality(){
     </div>`;
   }).join('');
 }
+const RES_SERIES = {
+  '现代住宅区':'现代住宅','艺术住宅区':'新艺术住宅','怀旧住宅区':'怀旧住宅',
+  '田园住宅区':'田园木屋住宅','意式住宅':'意式风情住宅','度假住宅区':'休闲度假住宅',
+  '伦敦住宅区':'伦敦住宅','巴黎住宅区':'巴黎住宅',
+  '青年旅馆':'旅馆 / 民宿','旅馆住宅区':'旅馆 / 民宿',
+  '乡间民宿':'旅馆 / 民宿','雅致民宿':'旅馆 / 民宿','精品民宿':'旅馆 / 民宿'
+};
+const RES_NAME_LEVEL = {'青年旅馆':1,'便捷酒店':2,'轻奢酒店':3,'乡间民宿':1,'雅致民宿':2,'精品民宿':3};
+const RES_PREFAB_LEVEL = {
+  ModernResidential12:1, ModernResidential23:2,
+  ModernResidential11:1, ModernResidential22:2, ModernResidential13:3,
+  OmegaResidential1:1, OmegaResidential2:2, OmegaResidential3:3, OmegaResidential4:4, OmegaResidential5:5, OmegaResidential6:6,
+  OmegaResidential7:1, OmegaResidential8:2,
+  OmegaResidential9:1, OmegaResidential10:2, OmegaResidential11:3, OmegaResidential12:4,
+  OmegaResidential13:1, OmegaResidential14:2,
+  CycladesResidential1:1, CycladesResidential2:2, CycladesResidential3:3, CycladesResidential4:4,
+  CloudShuttleResidential1:1, CloudShuttleResidential2:2
+};
+const RES_LEVEL_CN = ['','一','二','三','四','五','六'];
+function resSeriesName(d){ return RES_SERIES[d.sub] || d.sub; }
+function resLevelOf(d){
+  const m = d.name.match(/^([一二三四五六])级/);
+  if(m) return RES_LEVELS[m[1]];
+  return RES_NAME_LEVEL[d.name] || RES_PREFAB_LEVEL[d.prefab] || 0;
+}
+function renderPopulation(){
+  const box = $('#pop-grid');
+  if(!box) return;
+  const groups = new Map();
+  DATA.forEach(d=>{
+    if(d.cat!=='住宅' || d.population==null) return;
+    const name = resSeriesName(d);
+    const lv = resLevelOf(d);
+    const cur = groups.get(name);
+    if(!cur || lv>cur.lv || (lv===cur.lv && d.population>cur.pop)) groups.set(name, {name, lv, pop:d.population});
+  });
+  const rows = [...groups.values()].sort((a,b)=>b.pop-a.pop || a.name.localeCompare(b.name,'zh-Hans-CN'));
+  if(!rows.length){ box.innerHTML=''; return; }
+  const max = rows[0].pop;
+  const body = rows.map((x,i)=>`<tr>
+      <td class="idx"><span class="rank-no">${i+1}</span></td>
+      <td>${esc(x.name)}</td>
+      <td class="calc">${RES_LEVEL_CN[x.lv]||'-'}级</td>
+      <td class="val"><span class="pop-meter"><i style="width:${Math.max(4, x.pop/max*100)}%"></i></span>${x.pop.toLocaleString('zh-CN')}</td>
+    </tr>`).join('');
+  box.innerHTML = `<div class="rank-col pop-card" data-rk="pop">
+    <h3><span class="dot"></span>住宅人口排行<em>${rows.length} 项</em></h3>
+    <div class="table-scroll">
+      <table class="rank-table pop-table">
+        <thead><tr><th>名次</th><th>住宅</th><th>等级</th><th>满级人口</th></tr></thead>
+        <tbody>${body}</tbody>
+      </table>
+    </div>
+  </div>`;
+}
 function applyRankFilter(){
   const cat = state.rankCat || 'all';
   document.querySelectorAll('#rank-tabs .subtab').forEach(b=>b.classList.toggle('active', b.dataset.rk===cat));
-  const boostMode = cat==='all' || !['power','quality'].includes(cat);
+  const boostMode = cat==='all' || !['power','quality','pop'].includes(cat);
   document.querySelectorAll('#rank-grid .rank-col').forEach(col=>{
     col.hidden = !(boostMode && (cat==='all' || col.dataset.rk===cat));
   });
   const pg = $('#power-grid');
   if(pg) pg.hidden = !(cat==='all' || cat==='power');
+  const popg = $('#pop-grid');
+  if(popg) popg.hidden = !(cat==='all' || cat==='pop');
   const qg = $('#quality-grid');
   if(qg) qg.hidden = !(cat==='all' || cat==='quality');
   const bh = $('#boost-heading');
@@ -803,6 +880,10 @@ function applyRankFilter(){
   if(ph) ph.hidden = !(cat==='all' || cat==='power');
   const pn = $('#power-note');
   if(pn) pn.hidden = !(cat==='all' || cat==='power');
+  const poph = $('#pop-heading');
+  if(poph) poph.hidden = !(cat==='all' || cat==='pop');
+  const popn = $('#pop-note');
+  if(popn) popn.hidden = !(cat==='all' || cat==='pop');
   const qh = $('#quality-heading');
   if(qh) qh.hidden = !(cat==='all' || cat==='quality');
   const qn = $('#quality-note');
@@ -826,6 +907,7 @@ renderTabs();
 renderSubTabs();
 renderRank();
 renderPowerTable();
+renderPopulation();
 renderQuality();
 render();
 
@@ -839,10 +921,10 @@ if ('serviceWorker' in navigator) {
 /* 更新公告：以后每次更新，修改 SITE_VERSION 和 WHATS_NEW 即可。
    同一版本只在玩家第一次访问时提示一次，关闭后写入本地记录，不再重复弹出。 */
 (function(){
-  const SITE_VERSION = '2026.11.25';
+  const SITE_VERSION = '2026.11.26';
   const WHATS_NEW = [
-    '图鉴新增 10 个建筑：城市消防站、城市警察局、Omega医疗中心、市民医院、开罗塔、维京之门、彩轮长廊、云梭大厦、晴湾公寓（两级）',
-    '新增建筑已补齐占地 / 覆盖范围、满意度与繁荣度，并配上建筑图片，排行榜同步计入'
+    '排行榜新增「住宅人口」排行：按各系列满级人口从高到低排列，共 17 项，晴湾公寓 4,150 居首，高级摩登住宅 3,610 第二',
+    '人口数据取自游戏实测与图鉴满级数值，民宿与旅馆各级人口一致，合并为一项；目前还没有满级人口数据的住宅暂不列入'
   ];
   const KEY = 'ctj_whatsnew_seen';
   const box = document.getElementById('whatsnew');
