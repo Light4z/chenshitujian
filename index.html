@@ -172,20 +172,24 @@ body.rank-mode .atlas-only{display:none}
 .rank-note{margin:14px 0 0;font-size:10.5px;color:#98a1ae;line-height:1.7}
 .rank-note b{color:#8a5407;font-weight:600}
 .pop-grid{grid-template-columns:1fr}
+.pop-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 .pop-table{table-layout:fixed}
-.pop-table th:first-child,.pop-table td:first-child{width:7%;text-align:left;padding-left:0}
-.pop-table th:nth-child(2),.pop-table td:nth-child(2){width:45%}
-.pop-table th:nth-child(3),.pop-table td:nth-child(3){width:12%;text-align:center}
-.pop-table th:nth-child(4),.pop-table td:nth-child(4){width:36%;text-align:right}
+.pop-table th:first-child,.pop-table td:first-child{width:46px;text-align:left;padding-left:0}
+.pop-table th:nth-child(2),.pop-table td:nth-child(2){width:auto}
+.pop-table th:nth-child(3),.pop-table td:nth-child(3){width:58px;text-align:center}
+.pop-table th:nth-child(4),.pop-table td:nth-child(4){width:190px;text-align:right}
 .pop-table .idx .rank-no{margin-top:0;font-size:11px;color:#9aa3af}
 .pop-table .val{color:#16724d}
 .pop-meter{display:inline-block;width:120px;height:5px;border-radius:3px;background:#eef4f0;margin-right:8px;vertical-align:1px;overflow:hidden}
 .pop-meter i{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,#8fd7b3,#2f9e6b)}
+@media (max-width:900px){
+  .pop-cols{grid-template-columns:1fr}
+}
 @media (max-width:640px){
-  .pop-table th:nth-child(1),.pop-table td:nth-child(1){width:12%}
-  .pop-table th:nth-child(2),.pop-table td:nth-child(2){width:40%}
-  .pop-table th:nth-child(3),.pop-table td:nth-child(3){width:16%}
-  .pop-table th:nth-child(4),.pop-table td:nth-child(4){width:32%}
+  .pop-cols{gap:0}
+  .pop-table th:nth-child(1),.pop-table td:nth-child(1){width:38px}
+  .pop-table th:nth-child(3),.pop-table td:nth-child(3){width:52px}
+  .pop-table th:nth-child(4),.pop-table td:nth-child(4){width:150px}
   .pop-meter{width:54px;margin-right:6px}
 }
 .empty{max-width:1240px;margin:60px auto;padding:0 28px;text-align:center;color:var(--muted)}
@@ -352,6 +356,7 @@ summary{cursor:pointer;font-size:12.5px;color:#374151;outline:none}
   <h3 class="rank-section" id="power-heading">基础资源产能效率</h3>
   <div class="rank-grid power-grid" id="power-grid"></div>
   <p class="rank-note" id="power-note"><b>资金充足时优先选同类最贵的一档</b>：单位资金产能虽然偏低，但总产能和单位占地产能最高，更省地；预算有限时再参考资金比。<br>加成建筑中，消防、警察、保健、公园按服务覆盖类处理，未计入排行；基础资源按分类与等级排列，表中资金单位为万。高山、沙滩建筑的占地只按宽度×1计算，长度不计入性价比；高山覆盖区域按单侧延伸范围显示。千万级性价比最佳按同类中造价不低于1000万且排除最贵一项后，以产能/资金比40%、产能/占地比60%加权综合选出。</p>
+  <h3 class="rank-section" id="pop-heading">住宅人口排行</h3>
   <div class="rank-grid pop-grid" id="pop-grid"></div>
   <p class="rank-note" id="pop-note">按各系列满级住宅人口降序排列；同系列只取满级一项，暂无人口数据的住宅不计入。民宿与旅馆各级人口一致，合并为一项。</p>
   <h3 class="rank-section" id="quality-heading">抽卡品质</h3>
@@ -843,20 +848,21 @@ function renderPopulation(){
   const rows = [...groups.values()].sort((a,b)=>b.pop-a.pop || a.name.localeCompare(b.name,'zh-Hans-CN'));
   if(!rows.length){ box.innerHTML=''; return; }
   const max = rows[0].pop;
-  const body = rows.map((x,i)=>`<tr>
-      <td class="idx"><span class="rank-no">${i+1}</span></td>
+  const half = rows.length > 10 ? Math.ceil(rows.length/2) : rows.length;
+  const chunks = half < rows.length ? [rows.slice(0,half), rows.slice(half)] : [rows];
+  const tableOf = (arr, offset) => `<div class="table-scroll">
+      <table class="rank-table pop-table">
+        <thead><tr><th>名次</th><th>住宅</th><th>等级</th><th>满级人口</th></tr></thead>
+        <tbody>${arr.map((x,i)=>`<tr>
+      <td class="idx"><span class="rank-no">${offset+i+1}</span></td>
       <td>${esc(x.name)}</td>
       <td class="calc">${RES_LEVEL_CN[x.lv]||'-'}级</td>
       <td class="val"><span class="pop-meter"><i style="width:${Math.max(4, x.pop/max*100)}%"></i></span>${x.pop.toLocaleString('zh-CN')}</td>
-    </tr>`).join('');
-  box.innerHTML = `<div class="rank-col pop-card" data-rk="pop">
-    <h3><span class="dot"></span>住宅人口排行<em>${rows.length} 项</em></h3>
-    <div class="table-scroll">
-      <table class="rank-table pop-table">
-        <thead><tr><th>名次</th><th>住宅</th><th>等级</th><th>满级人口</th></tr></thead>
-        <tbody>${body}</tbody>
+    </tr>`).join('')}</tbody>
       </table>
-    </div>
+    </div>`;
+  box.innerHTML = `<div class="rank-col pop-card" data-rk="pop">
+    <div class="pop-cols">${chunks.map((c,i)=>tableOf(c, i?half:0)).join('')}</div>
   </div>`;
 }
 function applyRankFilter(){
