@@ -180,10 +180,13 @@ body.rank-mode .atlas-only{display:none}
 .pop-table th:nth-child(4),.pop-table td:nth-child(4){width:190px;text-align:right}
 .pop-table .idx .rank-no{margin-top:0;font-size:11px;color:#9aa3af}
 .pop-table .val{color:#16724d}
+.pop-num{display:inline-block;min-width:42px;text-align:left}
 .pop-meter{display:inline-block;width:120px;height:5px;border-radius:3px;background:#eef4f0;margin-right:8px;vertical-align:1px;overflow:hidden}
 .pop-meter i{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,#8fd7b3,#2f9e6b)}
 @media (max-width:900px){
-  .pop-cols{grid-template-columns:1fr}
+  .pop-cols{grid-template-columns:1fr;gap:0}
+  .pop-cols>.table-scroll:first-child:not(:last-child) tr:last-child td{border-bottom:1px dashed #f1f3f6}
+  .pop-cols>.table-scroll:nth-child(2) thead{display:none}
 }
 @media (max-width:640px){
   .pop-cols{gap:0}
@@ -857,7 +860,7 @@ function renderPopulation(){
       <td class="idx"><span class="rank-no">${offset+i+1}</span></td>
       <td>${esc(x.name)}</td>
       <td class="calc">${RES_LEVEL_CN[x.lv]||'-'}级</td>
-      <td class="val"><span class="pop-meter"><i style="width:${Math.max(4, x.pop/max*100)}%"></i></span>${x.pop.toLocaleString('zh-CN')}</td>
+      <td class="val"><span class="pop-meter"><i style="width:${Math.max(4, x.pop/max*100)}%"></i></span><span class="pop-num">${x.pop.toLocaleString('zh-CN')}</span></td>
     </tr>`).join('')}</tbody>
       </table>
     </div>`;
